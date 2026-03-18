@@ -6,4 +6,4 @@ Esta constituye la base del robot, sobre la cual se irán apilando las demás pl
 <p align="center">
 <img src="fotos_mecánica/CHASIS.png" width="800" height="700" />
 </p>
-Foto del chasis, sin planta de arriba [^1].
+Foto del chasis, sin planta de arriba[^1].
