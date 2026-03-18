@@ -4,5 +4,5 @@ Para el diseño del chasis pensamos en crear uno más pequeño que en años ante
 Esta constituye la base del robot, sobre la cual se irán apilando las demás plataformas mediante una serie de pasadores atornillados a la estructura. Estas placas serán fijadas con tornillos y servirán como soporte para la instalación del resto de los componentes necesarios.
 
 <p align="center">
-<img src="Mecánica/fotos_mecánica/CHASIS.png" width="100" height="100" />
+<img src="fotos_mecánica/CHASIS.png" width="100" height="100" />
 </p>
