@@ -9,7 +9,7 @@ Lo primero fue conectar el motor al escudo. La alimentación, la consigue median
 2. IN1: pin 6
 3. IN2: pin 7
 <p align="center">
-<img src="fotos_electronica/IMG_1350.jpeg" width="900" height="900" />
+<img src="fotos_electronica/IMG_1350.jpeg" width="800" height="800" />
 </p>
    
 ### Conexionado de los sensores de ultrasonidos
@@ -19,7 +19,7 @@ Para el correcto funcionamento de nuestro robot, necesitábamos al menos 3 senso
 3. ECHO: pin 1
 4. GND: GND
 <p align="center">
-<img src="fotos_electronica/IMG_1351.jpeg" width="900" height="900" />
+<img src="fotos_electronica/IMG_1351.jpeg" width="800" height="800" />
 </p>
    
 ### Conexionado del servomotor
