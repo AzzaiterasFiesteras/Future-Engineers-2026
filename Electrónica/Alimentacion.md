@@ -14,13 +14,27 @@ Lo primero fue conectar el motor al escudo. La alimentación, la consigue median
    
 ### Conexionado de los sensores de ultrasonidos
 Para el correcto funcionamento de nuestro robot, necesitábamos al menos 3 sensores de ultrasonidos que midieran las distancias entre las paredes. Estos sensores tienen 4 pines a los que conectarse. Uno de 5V y otro de GND los cuales le proporcionan la energía que necesita para funcionar. Y después, tiene otros dos pines más de control, el TRIGGER y el ECHO; que uno emite la señal y el otro la recibe. Así es cómo lo hemos conectado:
+- Ultrasonidos de la izquierda
 1. VCC: 5V
 2. TRIGGER: pin 2
 3. ECHO: pin 1
 4. GND: GND
+- Ultrasonidos del centro
+1. VCC: 5V
+2. TRIGGER: pin 3
+3. ECHO: pin 4
+4. GND: GND
+- Ultrasonidos de la derecha
+1. VCC: 5V
+2. TRIGGER: pin 11
+3. ECHO: pin 12
+4. GND: GND
+   
 <p align="center">
 <img src="fotos_electronica/IMG_1351.jpeg" width="800" height="800" />
 </p>
-   
+
 ### Conexionado del servomotor
+Para los giros era necesario incorporar un mecanismo de dirección delantero. Para eso utilizamos un servomotor, el cual conectamos a 5V, a GND y al pin 9.
+
 
