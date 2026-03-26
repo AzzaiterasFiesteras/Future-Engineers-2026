@@ -31,6 +31,9 @@ Para la correcta programación de nuestro robot necesitábamos disponer de tres 
 
 ## Placa 
 
+<p align="center">
+<img src="fotos_electronica/IMG_2478.jpeg" width="700" height="700" />
+</p>
 
 
 
