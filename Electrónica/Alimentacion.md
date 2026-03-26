@@ -44,6 +44,7 @@ Uno de los mayores desafíos que enfrentamos durante el montaje del robot fue la
 Las pilas de 9 V no ofrecían suficiente corriente para alimentar los motores sin caídas de tensión.
 Las pilas más pequeñas AAA, incluso apiladas en serie, no proporcionaban la capacidad energética necesaria para mantener el robot funcionando por largos periodos.
 Otra opción también era utilizar de 9 V recargables de 1300mAh. Sin embargo de experiencias anteriores ya éramos conocedores de que no serviría ya que no tiene la capacidad para alimentar a todos los componentes necesarios. 
-(foto pilas 9v)
- 
+ <p align="center">
+<img src="fotos_electronica/pilas9v.jpg" width="800" height="800" />
+</p>
  Por esto, decidimos optar por el uso de dos baterías recargables tipo 18650 de 9900 mAh cada una, conectadas en serie mediante un portapilas específico para este formato. Además de proporcionar un voltaje suficiente, también dotaba al robot de una alta capacidad de carga (autonomía prolongada).
