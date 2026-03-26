@@ -5,7 +5,7 @@
 ## Sobre Eva
 ¡Hola! Soy Eva. Tengo 15 años y soy una estudiante del instituto Az-Zait. Estoy en 4º de ESO y desde que entré he estado en el equipo de robótica. He participado dos veces en dos años diferentes en la WRO de Jaén, he estado en la WRO Nacional en 2023 en la Seu d´Urgel. También he participado en la WRO de Madrid. Y en la última competición en la que participé fue en el Open de Brescia, en septiembre de 2024. Soy una chica trabajadora, graciosa y a veces demasiado perfeccionista. Por eso mismo, me gusta desconectar y disfrutar con mis amigos los fin de semana. 
 <p align="center">
-<img src="fotos_introduccion/NOA_POSANDO.jpg" width="450" height="550" />
+<img src="fotos_introduccion/EVA_POSANDO.jpg" width="450" height="550" />
 </p>
 
 ## Sobre Lidia
