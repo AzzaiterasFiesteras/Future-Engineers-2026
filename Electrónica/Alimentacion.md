@@ -38,3 +38,12 @@ Para el correcto funcionamento de nuestro robot, necesitábamos al menos 3 senso
 Para los giros era necesario incorporar un mecanismo de dirección delantero. Para eso utilizamos un servomotor, el cual conectamos a 5V, a GND y al pin 9.
 
 
+## Baterías
+Uno de los mayores desafíos que enfrentamos durante el montaje del robot fue la implementación de su sistema de alimentación. Desde el inicio del proyecto, quedó claro que alimentar de manera eficiente todos los componentes: motores, sensores, placa y posibles componentes adicionales, no sería tarea sencilla. Algunas razones por las que tuvimos que escoger estas pilas son:
+
+Las pilas de 9 V no ofrecían suficiente corriente para alimentar los motores sin caídas de tensión.
+Las pilas más pequeñas AAA, incluso apiladas en serie, no proporcionaban la capacidad energética necesaria para mantener el robot funcionando por largos periodos.
+Otra opción también era utilizar de 9 V recargables de 1300mAh. Sin embargo de experiencias anteriores ya éramos conocedores de que no serviría ya que no tiene la capacidad para alimentar a todos los componentes necesarios. 
+(foto pilas 9v)
+ 
+ Por esto, decidimos optar por el uso de dos baterías recargables tipo 18650 de 9900 mAh cada una, conectadas en serie mediante un portapilas específico para este formato. Además de proporcionar un voltaje suficiente, también dotaba al robot de una alta capacidad de carga (autonomía prolongada).
