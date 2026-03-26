@@ -48,3 +48,6 @@ Otra opción también era utilizar de 9 V recargables de 1300mAh. Sin embargo de
 <img src="fotos_electronica/pilas9v.jpg" width="800" height="800" />
 </p>
  Por esto, decidimos optar por el uso de dos baterías recargables tipo 18650 de 9900 mAh cada una, conectadas en serie mediante un portapilas específico para este formato. Además de proporcionar un voltaje suficiente, también dotaba al robot de una alta capacidad de carga (autonomía prolongada).
+  <p align="center">
+<img src="fotos_electronica/IMG_2476.jpeg" width="800" height="800" />
+</p>
