@@ -12,3 +12,6 @@ Mi nombre es Lidia Requena Torres, tengo 16 años y actualmente estoy estudiando
 
 ## Sobre Noa
 Hola, mi nombre es Noa Torres Serra, tengo 15 años y soy alumna del instituto IES Az-zait de Jaén. Actualmente estoy estudiando 4º de la ESO y llevo los cuatro años partcipando en el taller de robótica. He participado en dos competiciones nacionales: Almería 2024 y Cáceres 2025. También tuve la oportunidad de asistir a la nacional en la Seu d´Urgel. Estas experiancias me han enseñado mucho y he pasado muy buenos momentos en ellas, por eso mismo,¡voy a repetir este año!. Me considero una persona súper activa, me encanta participar en cualquier actividad que me permita aprender, viajar o conocer gente.
+<p align="center">
+<img src="fotos_introduccion/tablero.png" width="700" height="700" />
+</p>
