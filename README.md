@@ -36,7 +36,6 @@ One of the the major problems was being able to prove the necessary energy to al
 [For more information click here](Electrónica/Alimentacion.md)
 
 ## Components
-[For more information click here](Electrónica/Componentes.md)
 
 ### Servo Motor
 For the front steering wheel was necessary the incorporation of a servo motor. We chose one that could make turns according to the turning angles to make it easier for us to program.
@@ -55,4 +54,6 @@ We took the Arduino Uno board as we were already familiar with it.
 
 ### Bateries
 We used the 18650 batteries for our robot. Their maximum voltage is 4.2V, and the battery capacity is 9900mAh. These batteries are also rechargeable. We chose these over others due to the large number of components we had to power.
+
+[For more information click here](Electrónica/Componentes.md)
 
