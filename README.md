@@ -1,6 +1,6 @@
 # Future-Engineers-2026
 ## Introduction 
-Here you can see all our robot´s documentation.[Introduction]()
+Here you can see all our robot´s documentation.[Introduction](Introduccion)
 ### Presentation 
 Our team´s robot is called WALLE. WALLE was designed for the Future Engineers challenge of the World Robot Olympiad. In this challenge we must complete 2 rounds. The first one, called Open Challenge, consists of completing 3 full laps around a board whose internal walls are placed randomly. The second, called Obstacle Challenge, also requires three laps on a board changing, but with the added difficulty of avoiding obstacles. Depending on the obstacles´colors (red or green) it must be avoided from the right side or the left side.
 
