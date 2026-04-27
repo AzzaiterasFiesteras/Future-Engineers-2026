@@ -8,16 +8,16 @@ Our team´s robot is called WALLE. WALLE was designed for the Future Engineers c
 To properly carry out this project, this robot has been previously designed according to some specific rules and conditions. We had complete freedom to use any material, such as plastic, wood or even Lego pieces. However, we had an limitation in the robot´s size. The robot can not exceed 30cm x 30cm. We adapted its design in all these conditions, with special care in the front steering gear, since it was not allow to make turns with the independent motors´control as they had to be conected in the same pin. This force us to design a front steering gear with a servomotor. [For more information click here](Condiciones_Previas/Condiciones_Previas.md)
 
 ## Materials and hardware - software relation
-1. 3D printed chassis and pins.
-2. Arduino Uno board
-3. MG996R servo motor.
-4. TT model motor with 1:40 speed reduction.
-5. Wheels with a diameter of [cm].
-6. Three HC-SR04 ultrasonic sensors for measuring distances.
-7. Electronic wiring: breadboard, male-to-male jumper wires, female-to-male jumper wires, and L298N shield for motor control.
-8. Power supply: two 3.7V 9900mAh 18650 batteries connected in series within their battery holder.
-9. BNO055 gyroscope.
-10. Front wheel mechanism.
+1. 3D printed chassis and pins: allows the placement of all the components with the enough space for the front steering gear not to interference with the rest of the components.
+2. Arduino Uno board: controls all the robot´s components, such as the motors, the servomotor or the sensors. These are connected to the Arduino board
+3. MG996R servo motor:  main responsible for the front steering gear. This is controlled by a servos library in the Arduino Ide program.
+4. TT model motor with 1:40 speed reduction: provide robot movement. These are connected to the L298N motor driver shield for control.
+5. Wheels with a diameter of [cm]: connected to the rear motors for their control.
+6. Three HC-SR04 ultrasonic sensors for measuring distances: must measure and calculate the distance between the walls and the obstacles.
+7. Electronic wiring: breadboard, male-to-male jumper wires, female-to-male jumper wires, and L298N shield for motor control: wires, protoboard and motor driver shield. Allows the comunication between the Arduino board and the rest of the components.
+8. Power supply: two 3.7V 9900mAh 18650 batteries connected in series within their battery holder that provide enough energy for the correct running of the robot.
+10. BNO055 gyroscope: allows the robot to make turns much more precisely by setting itself to specific degrees at the program.
+11. Front wheel mechanism: made by 3D printed pieces that hold the mechanism for the robot to make turns correctly.
 [For more information click here](Condiciones_Previas/Materiales_acabado.md)
 
 ## Mechanics 
@@ -56,4 +56,12 @@ We took the Arduino Uno board as we were already familiar with it.
 We used the 18650 batteries for our robot. Their maximum voltage is 4.2V, and the battery capacity is 9900mAh. These batteries are also rechargeable. We chose these over others due to the large number of components we had to power.
 
 [For more information click here](Electrónica/Componentes.md)
+
+## Compilation process
+For programming, we use the Arduino IDE program. Once the program is complete, all we have to do is upload it to the board. The process of uploading the board is very simple; we just connect the board to the computer using a wire and download the program. This way, the robot is ready to work.
+
+
+
+## Compilation process
+For programming, we used the Arduino IDE program. Once the program is complete, all we have to do is upload it to the board. The process of uploading the board is very simple; we just connect the board to the computer using a wire and download the program. This way, the robot is ready to work.
 
