@@ -6,5 +6,5 @@
 
 ## Obstacle Challenge
 <p align="center">
-<img src="fotos_programacion/diagrama flujo principal .png" width="800" height="900" />
+<img src="fotos_programacion/diagrama flujo principal .png" width="800" height="1000" />
 </p>
