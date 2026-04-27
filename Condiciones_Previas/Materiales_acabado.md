@@ -1,12 +1,11 @@
 # Listado de componentes y materiales
-- Chasis: impresión 3D y pasadores.
-- Placa Arduino Uno.
-- Servomotor MG996R.
-- Motor modelo TT  con reducción de velocidad 1:40.
-- Ruedas con  cm de diámetro.
-- 3 sensores ultrasónicos modelo HC-SR04 para medir distancias.
-- Conexionado electrónico: protoboard, cables M - M, cables H - M, y escudo L298N para control de motores.
-- Alimentación: 2 baterías de 3,7 V de 9900 mAh modelo: 18650, conectadas en serie dentro de su portapilas.
-- Giróscopo modelo BNO055
-- Mecanismo de las ruedas delantero
-
+- Chasis: impresión 3D y pasadores: permiten la colocación de todos los componentes con suficiente espacio para que el mecanismo de dirección delantero no interfiera con el resto.
+- Placa Arduino Uno: controla todos los componentes del robot, como los motores, el servomotor y los sensores. Estos se conectan a la placa Arduino.
+- Servomotor MG996R: principal responsable del mecanismo de dirección delantero. Se controla mediante una librería de servos en el IDE de Arduino.
+- Motor modelo TT con reducción de velocidad 1:40 que proporciona el movimiento del robot. Se conecta al escudo del motor L298N.
+- Ruedas con un diámetro de [cm]: conectadas a los motores traseros para su control.
+- Tres sensores ultrasónicos HC-SR04 para medir distancias: deben medir y calcular la distancia entre las paredes y los obstáculos.
+- Cableado electrónico: placa de prototipos, cables puente macho-macho, cables puente hembra-macho y controlador de motor L298N. Permite la comunicación entre la placa Arduino y el resto de los componentes.
+- Fuente de alimentación: dos baterías 18650 de 3,7 V y 9900 mAh conectadas en serie en su portapilas, que proporcionan la energía suficiente para el correcto funcionamiento del robot.
+- Giroscopio BNO055: permite al robot realizar giros con mayor precisión, ajustándose a ángulos específicos mediante programación. Controlado también por una librería de giroscopios en el IDE de Arduino.
+- Mecanismo de las ruedas delanteras: fabricado con piezas impresas en 3D que sujetan el mecanismo para que el robot pueda girar correctamente.
