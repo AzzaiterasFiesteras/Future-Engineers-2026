@@ -62,6 +62,3 @@ For programming, we use the Arduino IDE program. Once the program is complete, a
 
 
 
-## Compilation process
-For programming, we used the Arduino IDE program. Once the program is complete, all we have to do is upload it to the board. The process of uploading the board is very simple; we just connect the board to the computer using a wire and download the program. This way, the robot is ready to work.
-
