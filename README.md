@@ -18,7 +18,7 @@ To properly carry out this project, this robot has been previously designed acco
 8. Power supply: two 3.7V 9900mAh 18650 batteries connected in series within their battery holder.
 9. BNO055 gyroscope.
 10. Front wheel mechanism.
-[For more information click here](Condiciones_Previas/Materiales_acabado)
+[For more information click here](Condiciones_Previas/Materiales_acabado.md)
 
 ## Mechanics 
 ### Chassis 
