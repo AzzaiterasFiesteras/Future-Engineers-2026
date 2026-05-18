@@ -14,4 +14,7 @@ En el centro del eje se encuentra un servomotor, que gira a izquierda o derecha.
 
 - En este tercer diseño, creamos la carcasa en la que se encuentra envuelta la anterior pieza cilíndrica. Para ello tuvimos varios impedimentos y dificultades. El principal fue la dificultad del diseño 3D ya que la pieza era dificil de visualizar e idear. Una vez que ya la teniamos visualizada, con un poco de ayuda, fue relativamente fácil su realización en la interfaz de TinkerCad. La razón por la cual diseñamos esta pieza posteriormente de tener la cilíndrica, fue porque necesitabamos que esta se adaptara completamente a la cilíndrica y por tato necesitabamos tener sus medidas exactas. La carcasa cuenta con los agujeros y huecos necesarios para poder conectarlo e integrarlo fácilmente con el sistema de dirección.
 
-- En el último diseño para el mecanismo de dirección creamos un mero soporte para que las barras de este 
+- En el último diseño para el mecanismo de dirección creamos un mero soporte para que las barras de este estuvieran en sus respectivos sitios y permitieran que estas barras metálicas se pudieran desplazar y por tanto, pudiera girar todo el mecanismo.
+
+
+Todas estas piezas han sido diseñadas en la interfaz de TinkerCad en 3D y posteriormente impresas en una impresora 3D la cual disponemos en el instituto. Asimismo, todas las piezas han sido colocadas y atornilladas en la chasis. 
