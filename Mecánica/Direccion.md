@@ -19,7 +19,7 @@ En el centro del eje se encuentra un servomotor, que gira a izquierda o derecha.
 
 - En el último diseño para el mecanismo de dirección creamos un mero soporte para que las barras de este estuvieran en sus respectivos sitios y permitieran que estas barras metálicas se pudieran desplazar y por tanto, pudiera girar todo el mecanismo.
 <p align="center">
-<img src="imagenesdelproyecto/logo_azzait.png" width="800" height="900" />
+<img src="fotos_mecánica/PIEZA SUJETA DOS BARRAS - EVA.png" width="800" height="900" />
 </p>
 
 Todas estas piezas han sido diseñadas en la interfaz de TinkerCad en 3D y posteriormente impresas en una impresora 3D la cual disponemos en el instituto. Asimismo, todas las piezas han sido colocadas y atornilladas en la chasis. 
