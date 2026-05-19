@@ -10,7 +10,7 @@ En el centro del eje se encuentra un servomotor, que gira a izquierda o derecha.
 
 - En este primer diseño, creamos la barra horizontal conectada a ambas ruedas, la cual sirve como soporte y unión de las ruedas al chasis. Esta pieza, necesitaba tener las medidas adecuadas para que pudiera encajar en el diseño y además, coincidiera con la altura ideal para las ruedas. Fue una de las más sencillas de diseñar y posteriormente imprimir.
 <p align="center">
-<img src="fotos_mecánica/Mecanismo ruedas delanteras con dos agujeros.png" width="100" height="100" />
+<img src="fotos_mecánica/Mecanismo ruedas delanteras con dos agujeros.png" width="800" height="900" />
 </p>
 - En este segundo diseño, creamos la pieza cilíndrica para que gire dentro de una carcasa previamente diseñada e impresa. Esta pieza, es muy similar a un chupachups, lo cual nos va a permitir que gire sin problema en la carcasa, y por tanto, giren las ruedas. Posteriormente hemos necesitado limar un poco los bordes de la esfera para facilitar su rozamiento en la carcasa que la envuelve. Este diseño también tuvo que ser a medida para que la parte plana midiera exactamento lo mismo que el hueco de la rueda para que encajara de manera perfecta.
 
