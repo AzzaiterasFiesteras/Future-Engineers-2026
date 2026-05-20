@@ -5,6 +5,7 @@ El mecanismo de diección consiste en un conjunto de componentes del vehículo c
 En el centro del eje se encuentra un servomotor, que gira a izquierda o derecha. Ese mismo servo está unido a una barra que conecta ambas ruedas. Cada rueda está conectada a  una pieza impresa en 3D con forma cilíndrica (parecido a un “chupachups”). Esa pieza cilíndrica gira dentro de una carcasa redonda, que actúa como soporte y permite el giro suave, en la cual se produce la fuerza de rodamiento, lo que va a permitir que nuestras ruedas giren. El sistema funciona de tal manera que cuando el servomotor mueve el sistema de dirección (previamente montado) y por tanto, orienta el sentido al que queremos dirigir las dos piezas cilíndricas, es decir, las ruedas. Esto permite que el robot se desplace hacia la izquierda o la derecha según se necesite. La barra unicamente sirve como conexión y soporte de ambas ruedas y al chasis.
 
 ![](https://youtu.be/K2S8Ee-0UtI)
+[![](https://img.youtube.com/vi/K2S8Ee-0UtI/0.jpg)](https://www.youtube.com/watch?v=K2S8Ee-0UtI)
 
 ## Diseños en 3D utilizados 
 
