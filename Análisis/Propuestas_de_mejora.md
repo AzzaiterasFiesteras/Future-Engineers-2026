@@ -21,5 +21,5 @@ Por tanto, las tareas pendientes para completar esta mejora son las siguientes:
 - Realización de pruebas reales de funcionamiento y validación del comportamiento del robot ante la detección de objetos. Aunque la implementación completa no ha podido finalizarse dentro del tiempo disponible, la base del sistema ya está desarrollada y preparada para futuras mejoras y pruebas.
 
 <p align="center">
-<img src="imagenesdelproyecto/logo_azzait.png" width="100" height="100" />
+<img src="fotos_analisis/image (3).png" width="100" height="100" />
 </p>
