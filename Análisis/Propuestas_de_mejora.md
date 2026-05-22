@@ -26,5 +26,5 @@ Por tanto, las tareas pendientes para completar esta mejora son las siguientes:
 - Realización de pruebas reales de funcionamiento y validación del comportamiento del robot ante la detección de objetos. Aunque la implementación completa no ha podido finalizarse dentro del tiempo disponible, la base del sistema ya está desarrollada y preparada para futuras mejoras y pruebas.
 
 <p align="center">
-<img src="fotos_analisis/image (2).png" width="800" height="900" />
+<img src="fotos_analisis/capturacodigoobstaculos.png" width="800" height="900" />
 </p>
