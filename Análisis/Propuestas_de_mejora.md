@@ -6,7 +6,7 @@ Para mejorar el robot en un futuro, planteamos implementar un sistema de detecci
 </p>
 
 <p align="center">
-<img src="fotos_analisis/image (2).png" width="800" height="900" />
+<img src="fotos_analisis/image.png" width="800" height="900" />
 </p>
 
 El programa consiste en que, una vez que se detecta el bloque de obstáculos, el robot haga un giro en función del color identificado. (si es rojo esquiva a la derecha y si es verde a la izquierda). Sin embargo, este todavía no se ha probado todavía físicamente en el robot por limitaciones de tiempo para terminar de desarrollar todo.
@@ -21,5 +21,5 @@ Por tanto, las tareas pendientes para completar esta mejora son las siguientes:
 </p>
 
 <p align="center">
-<img src="fotos_analisis/image.png" width="800" height="900" />
+<img src="fotos_analisis/image (2).png" width="800" height="900" />
 </p>
