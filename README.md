@@ -29,7 +29,7 @@ This forms the base of the robot, upon which the other platforms will be stacked
 
 ### Steering system
 The steering system created is composed by an amount of components designed in 3D which act as a support and it allows you to control the trajectory you decide to make, through turns, with the servo motor and the steering system. The steering system consists of two bars which are attached to articulated joints. The bar below is the guideline that is part of the servomotor shaft. This bar is connected to the bar below through an articulated joint, as aformentioned. When the bar from above move, it allows the steering system to guide the wheels. 
-[For more information click here](Mecánica/Dirección.md)
+[For more information click here](Mecánica/Direccion.md)
 
 ## Electronics
 ### Power system
