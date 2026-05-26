@@ -126,6 +126,22 @@ void setup() {
   }
   prepararSensor(); 
   
-}```
-
+}
+```
 El` void setup` es una función que se crea al principio del programa y sólo se ejecuta una única vez al comienzo del programa. Su propósito principal es iniciar todos los componentes que se necesitan para comenzar a funcionar correctamente. En nuestro caso, activamos el puerto serie para poder calibrar las lecturas de los sensores de ultrasonido, y configuramos el pin del servomotor para que pueda empezar a funcionar desde el inicio. Además iniciamos los motores y el pulsador. A parte, añadimos un condicional para que en el caso de que no se detecte el giroscopio que lo imprima en el puerto serie y también bloquee el sistema. Además, llamamos a la función que calibra el giroscopio para que el robot sepa dónde está el "norte".  
+
+## Void loop
+
+```C++
+  if (digitalRead(pinPulsador) == LOW) {
+    start = true;
+    Serial.print(2);
+  }
+  if (start == true) {
+  // Lógica de fin de carrera: tras 12 giros (3 vueltas), el robot para
+    if (contadorGiros >= 12) {
+      terminarCarrera();
+      while(1); 
+    }
+```
+En la primera parte del void loop hemos establecido la programación del pulsador de tal manera que al pulsarlo empiece todo el programa y además, imprima en el puerto serie el número 2 para comprobar que el pulsador está funcionando. Además, añadimos la lógica del final: tras 12 giros, es decir, tres vueltas el robot se detiene. 
