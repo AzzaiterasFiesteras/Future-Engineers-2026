@@ -60,7 +60,7 @@ We used the 18650 batteries for our robot. Their maximum voltage is 4.2V, and th
 
 ## Programme
 ## Code functions
-| Function                | Return Type   | What does it do?                         | Use in the program                                                                                                                            |
+| Function                |        Type   | What does it do?                         | Use in the program                                                                                                                            |
 | ----------------------- | ------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`setup()`**           | `void`        | Initializes the entire robot system      | Configures pins, starts serial communication, connects the servo, initializes the BNO055 sensor, and calibrates the gyroscope before starting |
 | **`loop()`**            | `void`        | Continuously runs the robot’s main logic | Reads sensors, detects obstacles, controls movement, corrects direction, performs turns, and counts laps                                      |
