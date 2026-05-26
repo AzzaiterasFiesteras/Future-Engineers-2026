@@ -54,4 +54,5 @@
 # Explicación del programa 
 
 float diferencia = anguloObjetivo - anguloAhora;
+if (contador1>2 || contador2>2)
 
