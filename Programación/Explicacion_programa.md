@@ -165,5 +165,56 @@ Aquí leemoos los datos de los sensores y los guardamos en variables para usarlo
     } else {
       contador2=0;
     }
+if (contador1>2 || contador2>2) {
+      contador1=0;
+      contador2=0;
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, LOW);
+      analogWrite(ENA, 0);
+      delay(500);
 ```
 En estas funciones el programa está usando dos contadores para detectar cuando el robot necesitaría girar. Primero, el robot va comprobando las distancias con sus sensores. Si detecta que se acerca a las paredes varias veces seguidas, o si detecta una situación rara donde hay mucha diferencia entre lo que ve a la izquierda y a la derecha, empieza a sumar en unos contadores. Estos contadores sirven para asegurarse de que no es algo puntual, sino que realmente el problema se mantiene durante un tiempo. Es básicamente una manera de asegurar que las mediciones de los sensores son correctas. En otras palabras, el robot no reacciona a un solo dato, sino que espera a que el problema se repita varias veces, y entonces se para para evitar chocar o seguir en una mala situación.
+
+``` C++
+     if (contadorGiros == 0) {
+        if (cmIzq < cmDer) sentido = 1; 
+        else sentido = 2;              
+        Serial.print("Sentido del circuito: ");
+        Serial.println(sentido);
+      }
+      if (sentido == 1) hacerGiro(90);
+      else hacerGiro(-90);
+
+      contadorGiros++; 
+      Serial.print("Esquina número: ");
+      Serial.println(contadorGiros);
+    }
+```
+Es entonces, cuando en la primera pared decidimos si el circuito se hace por la izquierda o por la derecha. Además, establecemos que si la distancia de la izquierda es menor que la de la derecha, entonces el sentido va a ser el 1; el correspondiente a la derecha. Y por lo tanto, si es al revés el sentido va a ser el 2; el que corresponde a la izquierda. Por lo tanto para la ejecución del giro decimos que si el sentido es el 1 (derecha) entonces que el robot haga un giro de 90 grados. Y si es al revés, que haga un giro de -90 grados para girar a la izquierda (sentido 2). Además, conforme vamos haciendo los giros los vamos contando ya que posteriormente los necesitaremos para parar el robot. Para asegurarnos de que el contador de giros está funcionando, mostramos en el puerto serie el número de esquinas, y por tanto, de giros. 
+
+``` C++
+else {
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, HIGH);
+      analogWrite(ENA, 200);
+
+      // Ajuste de dirección para ir siempre rectos
+      float diferencia = anguloObjetivo - anguloAhora;
+      if (diferencia > 180) diferencia -= 360;
+      if (diferencia < -180) diferencia += 360;
+
+      // Si nos desviamos, el servo corrige automáticamente
+      if (diferencia > 3) {
+        cochino.write(centroServo + 12);
+      } else if (diferencia < -3) {
+        cochino.write(centroServo - 12);
+      } else {
+        cochino.write(centroServo);
+      }
+    } 
+  }
+}
+```
+Sin embargo, si el robot no detecta ninguna pared, significa que el camino está libre, por lo cual activamos los motores y aumentamos su velocidad y además ajustamos la dirección para que siempre vaya recto y por tanto si el robot se desvía, el servo se corrige automáticamente.
+
+## Funciones propias 
