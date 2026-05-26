@@ -52,7 +52,7 @@
 
 
 # Explicación del programa
-
+## Variables y librerías
 ```C++
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
@@ -65,22 +65,67 @@ int IN1 = 6;
 int IN2 = 7;
 
 Servo cochino;
-const int pinservo = 9;
+Adafruit_BNO055 bno = Adafruit_BNO055(55);
 
+const int pinservo = 9;
 const int pinPulsador=13;
 
 float anguloObjetivo;  
 int centroServo = 35;  // Posición recta
 int sentido = 0;       // 1 para derecha, 2 para izquierda
 int contadorGiros = 0; // Control de esquinas para las 3 vueltas
-
-Adafruit_BNO055 bno = Adafruit_BNO055(55);
-
+int contador1=0;
+int contador2=0;
+bool start = false; 
 ```
-Antes de desarrollar la lógica de la programación, lo primero fue instalar las librerías tanto de los motores como del servomotor, de los sensores de ultrasonidos y del giroscopio para facilitar la programación mediante `#include <nombre de la librería>`Y además, nombrar el servo. Los sensores de ultrasonidos los nombramos posteriormente. Y por último, antes de nombrar a los sensores, definimos todas las variables:
+Antes de desarrollar la lógica de la programación, lo primero fue instalar las librerías tanto de los motores como del servomotor, de los sensores de ultrasonidos y del giroscopio para facilitar la programación mediante `#include <nombre de la librería>`Y además, nombrar el servo y el giroscopio. Los sensores de ultrasonidos los nombramos posteriormente. Y por último, antes de nombrar a los sensores, definimos todas las variables:
 - `int ENA = 5`; `int IN1 = 6`; `int IN2 = 7`; establecemos los pines a los que van conectados los motores en el escudo L298N.
 - `const int pinservo = 9;` establecemos el pin al que está conectado el servo. 
 - `float anguloObjetivo:` que es el ángulo al que queremos ir.
 - `int centroServo = 35; ` que es la posición del servomotor en la cual el sistema de dirección del robot está orientado para ir recto.
 - `int sentido = 0; ` el robot identificará el sentido al que debe girar en el primer giro. Para esto era necesario crear una variable para la cual el valor 1 sea girar hacia la derecha y el valor 2 para la izquierda. Es por esto, que desde el principio del código establecemos que sea 0.
-- `int contadorGiros = 0;` gracias a esta variable que cuenta giros, el robot es capaz de pararse al completar las 3 vueltas (12 giros en total). 
+- `int contadorGiros = 0;` gracias a esta variable que cuenta giros, el robot es capaz de pararse al completar las 3 vueltas (12 giros en total).
+- `contador1` y `contador2`:
+- `bool start = false`: Este tipo de variable solo puede tener dos valores: true (verdadero) o false (falso). En este caso empieza en false, lo que significa que el sistema está apagado. Lo usaremos para iniciar el programa desde el pulsador.
+  
+```C++
+#define TRIG_IZQ 8
+#define ECHO_IZQ 10
+Ultrasonic ultraIZQ(TRIG_IZQ, ECHO_IZQ, 60000);
+#define TRIG_CENTRO 3
+#define ECHO_CENTRO 4
+Ultrasonic ultraCENTRO(TRIG_CENTRO, ECHO_CENTRO, 60000);
+#define TRIG_DERECH 11
+#define ECHO_DERECH 12
+Ultrasonic ultraDERECH(TRIG_DERECH, ECHO_DERECH, 60000);
+```
+
+Como ya sabemos, los sensores de ultrasonidos están compuestos por un `trigger` (que emite una señal) y un `echo` (que recibe esa señal). Según el tiempo que tarda en rebotar esa señal podemos calcular la distancia. Para esto, tuvimos que indicar en la programación los pines a los que estaban conectados cada trigger y cada echo de cada sensor, de tal manera que:
+- **Trigger** (pin 8) y **echo** (pin 10) = sensor ultrasonidos izquierda
+- **Trigger** (pin 3) y **echo** (pin 4) = sensor ultrasonidos centro
+- **Trigger** (pin 11) y **echo** (pin 12) = sensor ultrasonidos derecha
+  
+## Void setup
+
+```C++
+void setup() {
+  Serial.begin(9600);
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(ENA, OUTPUT);
+  pinMode(pinPulsador, INPUT_PULLUP);
+
+  cochino.attach(pinservo);
+  cochino.write(centroServo);
+  
+  Serial.println("Hola, iniciando sistema...");
+
+  if (!bno.begin()) {
+    Serial.println("No se encuentra el sensor BNO");
+    while (1); // Bloqueo si no hay sensor
+  }
+  prepararSensor(); 
+  
+}```
+
+El` void setup` es una función que se crea al principio del programa y sólo se ejecuta una única vez al comienzo del programa. Su propósito principal es iniciar todos los componentes que se necesitan para comenzar a funcionar correctamente. En nuestro caso, activamos el puerto serie para poder calibrar las lecturas de los sensores de ultrasonido, y configuramos el pin del servomotor para que pueda empezar a funcionar desde el inicio. Además iniciamos los motores y el pulsador. A parte, añadimos un condicional para que en el caso de que no se detecte el giroscopio que lo imprima en el puerto serie y también bloquee el sistema. Además, llamamos a la función que calibra el giroscopio para que el robot sepa dónde está el "norte".  
