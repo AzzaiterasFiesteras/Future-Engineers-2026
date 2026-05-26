@@ -10,7 +10,7 @@
 
 1. [Summary README](/README.md)
 
-2. [Introduction](/Introduction/)  
+2. [Introduction](/Introduccion/)  
    - [Objective](./Models/README.md)
    - [Team presentation](./Models/README.md)
   
