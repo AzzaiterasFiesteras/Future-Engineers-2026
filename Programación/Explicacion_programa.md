@@ -215,6 +215,76 @@ else {
   }
 }
 ```
+
+
 Sin embargo, si el robot no detecta ninguna pared, significa que el camino está libre, por lo cual activamos los motores y aumentamos su velocidad y además ajustamos la dirección para que siempre vaya recto y por tanto si el robot se desvía, el servo se corrige automáticamente.
 
 ## Funciones propias 
+``` C++
+float obtenerGrados() {
+  sensors_event_t datos;
+  bno.getEvent(&datos);
+  return datos.orientation.x;
+}
+```
+Este código sirve para que el robot pueda saber hacia dónde está girado, calibrarse y hacer giros precisos usando un sensor BNO055 (un giroscopio). Esta lee el sensor de orientación del robot. El sensor le dice en qué dirección está mirando (como una brújula). La función guarda esos datos y devuelve el ángulo actual del robot, es decir, cuántos grados está girado.
+```C++
+void prepararSensor() {
+  uint8_t sys, gyro, accel, mag;
+  Serial.println("Esperando calibración del giroscopio...");
+  do {
+    bno.getCalibration(&sys, &gyro, &accel, &mag);
+  } while (gyro < 3); // Nivel 3 es el máximo de precisión
+  
+  delay(1000);
+  anguloObjetivo = obtenerGrados(); // Fijamos el rumbo inicial
+  Serial.println("Sensor listo.");
+}
+```
+Este subprograma sirve para preparar el sensor antes de empezar a usar el robot. El programa espera hasta que el giroscopio esté bien calibrado. Mientras no esté bien calibrado, el robot no hace nada. Cuando ya está listo, espera un segundo y guarda la dirección actual como anguloObjetivo, es decir, el rumbo inicial que quiere mantener o usar como referencia. Luego avisa por pantalla que el sensor ya está listo.
+```C++
+void hacerGiro(int grados) {
+  anguloObjetivo = anguloObjetivo + grados;
+
+  // Ajuste para no salir del rango 0-360
+  if (anguloObjetivo >= 360) anguloObjetivo -= 360;
+  if (anguloObjetivo < 0) anguloObjetivo += 360;
+
+  // Movemos el servo para girar
+  if (grados > 0) cochino.write(centroServo + 35);
+  else cochino.write(centroServo - 35);
+
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  analogWrite(ENA, 140);
+```
+Este subprograma sirve para girar el robot una cantidad exacta de grados. Primero calcula el nuevo objetivo sumando los grados que quiere girar. Después ajusta ese valor para que siempre esté entre 0 y 360 grados, como si fuera un círculo. Luego el robot empieza a girar: mueve el servo para ayudar al giro (dependiendo si gira a la derecha o izquierda), activa el motor en una dirección y le da una velocidad más lenta para que el giro sea más preciso y le de tiempo a girar sin problema. 
+``` C++
+ float dist;
+  do {
+    float actual = obtenerGrados();
+    dist = anguloObjetivo - actual;
+    if (dist > 180) dist -= 360;
+    if (dist < -180) dist += 360;
+  } while (abs(dist) > 5); // El bucle para cuando el error es menor a 5 grados
+
+  cochino.write(centroServo); // Enderezamos ruedas
+  delay(200);
+```
+Mientras el robot está girando, entra en un bucle donde está constantemente mirando su orientación actual con el sensor. Va comparando la posición actual con la posición objetivo y calcula el error (la diferencia entre ambos ángulos). Si esa diferencia es mayor de 5 grados, sigue girando. Cuando finalmente el robot está lo suficientemente cerca del ángulo deseado (menos de 5 grados de error), se detiene el giro, endereza las ruedas y espera un pequeño tiempo para estabilizarse.
+
+``` C++
+void terminarCarrera() {
+  Serial.println("¡Última vuelta completada! Cruzando meta...");
+  cochino.write(centroServo);
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  analogWrite(ENA, 180);
+  delay(2000); // Avanza 2 segundos extra para quedar bien posicionado al final
+  
+  analogWrite(ENA, 0); 
+  digitalWrite(IN2, LOW);
+  Serial.println("Carrera finalizada con éxito.");
+}
+```
+Esta función sirve para que, cuando el robot termina la carrera, no intente girar ni corregir la dirección, sino que se mantenga completamente recto. Para eso primero centra el servo y luego hace que avance en línea recta durante unos segundos y entonces se detiene por completo. Este subprograma está pensado para asegurar que al final el robot siga recto y que no le pille el contador de giros a mitad de uno. 
