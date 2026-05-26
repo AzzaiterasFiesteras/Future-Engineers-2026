@@ -8,9 +8,9 @@
 <details>
 <summary><b>📂 Table of Contents</b></summary>
 
-1. [Summary README](./README.md)
+1. [Summary README](/README.md)
 
-2. [Introduction](./Models/)  
+2. [Introduction](/Introduction/)  
    - [Objective](./Models/README.md)
    - [Team presentation](./Models/README.md)
   
