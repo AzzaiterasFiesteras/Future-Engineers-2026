@@ -52,7 +52,8 @@
 
 
 # Explicación del programa 
-
-float diferencia = anguloObjetivo - anguloAhora;
-if (contador1>2 || contador2>2)
-
+`
+function saludar() {
+  console.log("¡Hola desde GitHub!");
+}
+`
