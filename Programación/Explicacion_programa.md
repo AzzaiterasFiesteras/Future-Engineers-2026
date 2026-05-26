@@ -21,18 +21,6 @@
 | `bno.begin()`|Inicializa el sensor BNO055 |
 | `prepararSensor()`|Calibra el giroscopio |
 
-## Funciones dentro del `void loop`
-
-| **Funciones** | **Uso explicado** | 
-| :--- | ---: |
-| `Serial.begin(9600)`| Inicia comunicación del puerto serie. |
-| `pinMode()`| Configura pines como entrada o salida |
-| `cochino.attach(pinservo)`| Conecta el servo |
-| `cochino.write(centroServo)`|`Coloca el servo centrado ` |
-| `bno.begin()`|Inicializa el sensor BNO055 |
-| `prepararSensor()`|Calibra el giroscopio |
-
-
 ## Funciones de librerías
 
 | **Función** |**Librería** | **Uso explicado** | 
