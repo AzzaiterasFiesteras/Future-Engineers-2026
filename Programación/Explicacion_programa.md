@@ -145,3 +145,25 @@ El` void setup` es una función que se crea al principio del programa y sólo se
     }
 ```
 En la primera parte del void loop hemos establecido la programación del pulsador de tal manera que al pulsarlo empiece todo el programa y además, imprima en el puerto serie el número 2 para comprobar que el pulsador está funcionando. Además, añadimos la lógica del final: tras 12 giros, es decir, tres vueltas el robot se detiene. 
+
+``` C++
+    int cmCentro = ultraCENTRO.Ranging(CM);
+    float anguloAhora = obtenerGrados();
+    int cmIzq = ultraIZQ.Ranging(CM);
+    int cmDer = ultraDERECH.Ranging(CM);
+```
+Aquí leemoos los datos de los sensores y los guardamos en variables para usarlos depués. Primero establecemos las distancias de los tres sensores de ultrasonidos, es decir, que lo que mida el sensor va a ser la distancia expresada en centímetros. Después, la variable anguloAhora guarda el resultado de la función obtenerGrados(). Esta función devuelve el ángulo actual del robot, y se guarda como un número decimal (`float`) porque puede tener decimales.
+
+``` C++
+  if (cmCentro < 80) {
+      contador1++;
+    } else {
+      contador1=0;
+    }
+    if (cmCentro < 140 && abs(cmIzq-cmDer)>120) {
+      contador2++;
+    } else {
+      contador2=0;
+    }
+```
+En estas funciones el programa está usando dos contadores para detectar cuando el robot necesitaría girar. Primero, el robot va comprobando las distancias con sus sensores. Si detecta que se acerca a las paredes varias veces seguidas, o si detecta una situación rara donde hay mucha diferencia entre lo que ve a la izquierda y a la derecha, empieza a sumar en unos contadores. Estos contadores sirven para asegurarse de que no es algo puntual, sino que realmente el problema se mantiene durante un tiempo. Es básicamente una manera de asegurar que las mediciones de los sensores son correctas. En otras palabras, el robot no reacciona a un solo dato, sino que espera a que el problema se repita varias veces, y entonces se para para evitar chocar o seguir en una mala situación.
