@@ -11,20 +11,20 @@
 1. [Summary README](/README.md)
 
 2. [Introduction](/Introduccion/)  
-   - [Objective](./Models/README.md)
-   - [Team presentation](./Models/README.md)
+   - [Objective](/Introduccion/Objetivo.md)
+   - [Team presentation](/Introduccion/Presentacion_equipo.md)
   
-3. [Initial Conditions](./Models/)
-   -  [Materials and hardware - software relation](./Models/)
+3. [Initial Conditions](/Condiciones_Previas/Condiciones_Previas.md)
+   -  [Materials and hardware - software relation](/Condiciones_Previas/Materiales_acabado.md)
      
-4. [Mechanics](./Models/)
-   - [Chassis](./Models/)
-   - [Steering system](./Models/)
+4. [Mechanics](/Mecánica/)
+   - [Chassis](/Mecánica/Chasis.md)
+   - [Steering system](/Mecánica/Direccion.md)
      
-5. [Electronics](./Models/)
-   - [Power system](./Models/)
-   - [Design](./Models/)
-   - [Components](./Models/)
+5. [Electronics](/Electrónica/)
+   - [Power system](/Electrónica/Alimentación.md)
+   - [Design](/Electrónica/Diseño.md)
+   - [Components](/Electrónica/Componentes.md)
      - Servomotor
      - Board
      - Shield
@@ -32,17 +32,17 @@
      - Gyroscope
      - Motor
      - Bateries
- 6. [Programme](./Models/)
-    - [Programme development](./Models/)
-    - [Flow charts](./Models/)
-  7. [3D Files](./Models/)
-  8. [Analysis](./Models/)
-     - [Detected problems](./Models/)
-     - [Improvement proposals](./Models/)
-   9. [Final results](./Models/)
-10. [Conclusion](./Models/)
+ 6. [Programme](/Programación/)
+    - [Programme development](/Programación/Explicación_programa.md)
+    - [Flow charts](/Programación/Pensamiento_lógico.md)
+  7. [3D Files](/Archivos_en3D/)
+  9. [Analysis](/Análisis/)
+     - [Detected problems](/Análisis/Problemas_detectados.md)
+     - [Improvement proposals](/Análisis/Diagramas_flujo.md))
+   10. [Final results](/Resultado/)
+11. [Conclusion](/Conclusiones/)
     - Acquired knowleadge
-12. [Bibliography](./Models/)
+12. [Bibliography](/Bibliografía/)
     - Arduino
     - Tinkercad
     - PixyCam
