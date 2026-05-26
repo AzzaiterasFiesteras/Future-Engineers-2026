@@ -51,9 +51,36 @@
 | `begin()`| BNO055 | Iniciar sensor  |
 
 
-# Explicación del programa 
-`
-function saludar() {
-  console.log("¡Hola desde GitHub!");
-}
-`
+# Explicación del programa
+
+```C++
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BNO055.h>
+#include <Servo.h>
+#include <Ultrasonic.h>
+
+int ENA = 5;
+int IN1 = 6;
+int IN2 = 7;
+
+Servo cochino;
+const int pinservo = 9;
+
+const int pinPulsador=13;
+
+float anguloObjetivo;  
+int centroServo = 35;  // Posición recta
+int sentido = 0;       // 1 para derecha, 2 para izquierda
+int contadorGiros = 0; // Control de esquinas para las 3 vueltas
+
+Adafruit_BNO055 bno = Adafruit_BNO055(55);
+
+```
+Antes de desarrollar la lógica de la programación, lo primero fue instalar las librerías tanto de los motores como del servomotor, de los sensores de ultrasonidos y del giroscopio para facilitar la programación mediante `#include <nombre de la librería>`Y además, nombrar el servo. Los sensores de ultrasonidos los nombramos posteriormente. Y por último, antes de nombrar a los sensores, definimos todas las variables:
+- `int ENA = 5`; `int IN1 = 6`; `int IN2 = 7`; establecemos los pines a los que van conectados los motores en el escudo L298N.
+- `const int pinservo = 9;` establecemos el pin al que está conectado el servo. 
+- `float anguloObjetivo:` que es el ángulo al que queremos ir.
+- `int centroServo = 35; ` que es la posición del servomotor en la cual el sistema de dirección del robot está orientado para ir recto.
+- `int sentido = 0; ` el robot identificará el sentido al que debe girar en el primer giro. Para esto era necesario crear una variable para la cual el valor 1 sea girar hacia la derecha y el valor 2 para la izquierda. Es por esto, que desde el principio del código establecemos que sea 0.
+- `int contadorGiros = 0;` gracias a esta variable que cuenta giros, el robot es capaz de pararse al completar las 3 vueltas (12 giros en total). 
