@@ -22,7 +22,33 @@
    - [Steering system](./Models/)
      
 5. [Electronics](./Models/)
-   - [Steering system](./Models/)
+   - [Power system](./Models/)
+   - [Design](./Models/)
+   - [Components](./Models/)
+     - Servomotor
+     - Board
+     - Shield
+     - Ultrasonic sensors
+     - Gyroscope
+     - Motor
+     - Bateries
+ 6. [Programme](./Models/)
+    - [Programme development](./Models/)
+    - [Flow charts](./Models/)
+  7. [3D Files](./Models/)
+  8. [Analysis](./Models/)
+     - [Detected problems](./Models/)
+     - [Improvement proposals](./Models/)
+   9. [Final results](./Models/)
+10. [Conclusion](./Models/)
+    - Acquired knowleadge
+12. [Bibliography](./Models/)
+    - Arduino
+    - Tinkercad
+    - PixyCam
+    - LucidChart
+</details>
+
 ## Introduction 
 Here you can see all our robot´s documentation.[For more information click here](Introduccion)
 ### Presentation 
