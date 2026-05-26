@@ -3,5 +3,5 @@
 
 
 <p align="center">
-<img src="imagenesbiblio/logo-lucidchart.webp" width="100" height="100" />
+<img src="imagenesbiblio/logo-lucidchart.webp" width="800" height="800" />
 </p>
