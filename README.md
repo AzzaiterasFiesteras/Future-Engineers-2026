@@ -1,5 +1,6 @@
-# Future-Engineers-2026
- 📌 Table of Contents
+<h1 align="center">Future Engineers 2026 </h1>
+
+ ### 📌 Table of Contents
 
 > [!TIP]
 > Click the arrow below 👇 to expand the **Table of Contents**.  
