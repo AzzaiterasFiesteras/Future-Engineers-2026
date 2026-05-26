@@ -58,6 +58,32 @@ We used the 18650 batteries for our robot. Their maximum voltage is 4.2V, and th
 
 [For more information click here](Electrónica/Componentes.md)
 
+## Programme
+## Code functions
+| Function                | Return Type   | What does it do?                         | Use in the program                                                                                                                            |
+| ----------------------- | ------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`setup()`**           | `void`        | Initializes the entire robot system      | Configures pins, starts serial communication, connects the servo, initializes the BNO055 sensor, and calibrates the gyroscope before starting |
+| **`loop()`**            | `void`        | Continuously runs the robot’s main logic | Reads sensors, detects obstacles, controls movement, corrects direction, performs turns, and counts laps                                      |
+| **`obtenerGrados()`**   | `float`       | Gets the robot’s current angle           | Reads the orientation from the BNO055 sensor and returns the current heading angle                                                            |
+| **`prepararSensor()`**  | `void`        | Calibrates the gyroscope                 | Waits until the sensor reaches maximum precision and stores the robot’s initial direction                                                     |
+| **`hacerGiro()`**       | `void`        | Performs a controlled turn               | Uses the servo and gyroscope to rotate the robot accurately                                                                                   |
+| **`terminarCarrera()`** | `void`        | Ends the race                            | Moves the robot forward for a few more seconds, stops the motor, and finishes execution                                                       |
+| **`Serial.begin()`**    | `void`        | Starts serial communication              | Allows messages to be sent to the Serial Monitor                                                                                              |
+| **`Serial.print()`**    | `void`        | Prints information without a newline     | Used for debugging and status messages                                                                                                        |
+| **`Serial.println()`**  | `void`        | Prints information with a newline        | Makes messages easier to read in the Serial Monitor                                                                                           |
+| **`pinMode()`**         | `void`        | Configures a pin                         | Defines whether a pin is used as input or output                                                                                              |
+| **`digitalWrite()`**    | `void`        | Turns a digital pin on or off            | Controls motor direction and other devices                                                                                                    |
+| **`digitalRead()`**     | `int`         | Reads a digital pin                      | Detects whether the push button is pressed                                                                                                    |
+| **`analogWrite()`**     | `void`        | Sends a PWM signal                       | Controls motor speed                                                                                                                          |
+| **`delay()`**           | `void`        | Pauses the program                       | Waits before continuing execution                                                                                                             |
+| **`abs()`**             | `int / float` | Returns the absolute value               | Used to calculate unsigned differences                                                                                                        |
+| **`attach()`**          | `void`        | Connects the servo                       | Enables Arduino to control the servo                                                                                                          |
+| **`write()`**           | `void`        | Moves the servo                          | Changes the steering direction                                                                                                                |
+| **`begin()`**           | `bool`        | Initializes the BNO055 sensor            | Checks whether the sensor is working correctly                                                                                                |
+| **`getEvent()`**        | `void`        | Retrieves sensor data                    | Reads orientation and motion data                                                                                                             |
+| **`getCalibration()`**  | `void`        | Checks calibration level                 | Verifies gyroscope precision                                                                                                                  |
+| **`Ranging()`**         | `int`         | Measures distance                        | Returns the distance detected by the ultrasonic sensor                                                                                        |
+
 ## Compilation process
 For programming, we use the Arduino IDE program. Once the program is complete, all we have to do is upload it to the board. The process of uploading the board is very simple; we just connect the board to the computer using a wire and download the program. This way, the robot is ready to work.
 
