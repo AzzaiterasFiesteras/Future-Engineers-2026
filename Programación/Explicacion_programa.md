@@ -49,7 +49,9 @@
 | `attach()` | Servo | Conectar servo|
 | `write()`  | Servo | Mover servo |
 | `begin()`| BNO055 | Iniciar sensor  |
-| `getEvent()` | BNO055| Obtener orientación  |
-| `getCalibration()`| BNO055 | Obtener calibración|
-| `Ranging(CM)`| Ultrasonic| Medir distancia|
+
+
+# Explicación del programa 
+
+float diferencia = anguloObjetivo - anguloAhora;
 
