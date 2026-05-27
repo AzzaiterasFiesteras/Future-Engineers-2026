@@ -51,7 +51,10 @@
 </details>
 
 ## Introduction 
-Here you can see all our robot´s documentation.[For more information click here](Introduccion)
+> [!WARNING]
+> Click the link below 👇 to see more information about the introduction.
+> [For more information click here](Introduccion/)
+
 > [!IMPORTANT]
 > Click the link below 👇 to see the final result of our robot.
 
