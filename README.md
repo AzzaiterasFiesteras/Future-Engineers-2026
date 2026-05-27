@@ -333,7 +333,16 @@ For programming, we use the Arduino IDE program. Once the program is complete, a
 ## Final results 
 > [!WARNING]
 > For seeing all the final products and our final result in the Open challenge, click the link below 👇 for seeing all the information with details. 
-> [For more information click here](Resultado/Resultado_final.md)                                                                                 
+> [For more information click here](Resultado/Resultado_final.md)
+
+## Conclusion and Analysis
+
+> [!WARNING]
+> For more information about all the acquired knowleadge and detected problems, click the link below  👇 for seeing all the information with details.
+> [For more information about detected problems click here](Análisis/Problemas_detectados.md)
+> [For more information about improvement proposals click here](Análisis/Propuestas_de_mejora.md)
+> [For more information about the conclusion and the acquired knowleadge click here](Conclusion/Conocimientos_adquiridos.md)
+
 
 ## Bibliography 
 
