@@ -58,10 +58,18 @@ Here you can see all our robot´s documentation.[For more information click here
 [![](https://img.youtube.com/vi/cXj32blsBB0/0.jpg)](https://www.youtube.com/watch?v=cXj32blsBB0)
 
 ### Presentation 
-Our team´s robot is called WALLE. WALLE was designed for the Future Engineers challenge of the World Robot Olympiad. In this challenge we must complete 2 rounds. The first one, called Open Challenge, consists of completing 3 full laps around a board whose internal walls are placed randomly. The second, called Obstacle Challenge, also requires three laps on a board changing, but with the added difficulty of avoiding obstacles. Depending on the obstacles´colors (red or green) it must be avoided from the right side or the left side.[For more information click here](Introduccion/Objetivo.md)
+Our team´s robot is called WALLE. WALLE was designed for the Future Engineers challenge of the World Robot Olympiad. In this challenge we must complete 2 rounds. The first one, called Open Challenge, consists of completing 3 full laps around a board whose internal walls are placed randomly. The second, called Obstacle Challenge, also requires three laps on a board changing, but with the added difficulty of avoiding obstacles. Depending on the obstacles´colors (red or green) it must be avoided from the right side or the left side.
+> [!WARNING]
+> Click the arrow below 👇 to expand the **Table of Contents**.  
+> Every item is a clickable link to a folder or README file in this repository.
+> [For more information click here](Introduccion/Objetivo.md)
 
 ### Initial Conditions
-To properly carry out this project, this robot has been previously designed according to some specific rules and conditions. We had complete freedom to use any material, such as plastic, wood or even Lego pieces. However, we had an limitation in the robot´s size. The robot can not exceed 30cm x 30cm. We adapted its design in all these conditions, with special care in the front steering gear, since it was not allow to make turns with the independent motors´control as they had to be conected in the same pin. This force us to design a front steering gear with a servomotor. [For more information click here](Condiciones_Previas/Condiciones_Previas.md)
+To properly carry out this project, this robot has been previously designed according to some specific rules and conditions. We had complete freedom to use any material, such as plastic, wood or even Lego pieces. However, we had an limitation in the robot´s size. The robot can not exceed 30cm x 30cm. We adapted its design in all these conditions, with special care in the front steering gear, since it was not allow to make turns with the independent motors´control as they had to be conected in the same pin. This force us to design a front steering gear with a servomotor.
+> [!WARNING]
+> Click the arrow below 👇 to expand the **Table of Contents**.  
+> Every item is a clickable link to a folder or README file in this repository.
+> [For more information click here](Condiciones_Previas/Condiciones_Previas.md)
 
 ## Materials and hardware - software relation
 1. 3D printed chassis and pins: allows the placement of all the components with the enough space for the front steering gear not to interference with the rest of the components.
@@ -74,14 +82,20 @@ To properly carry out this project, this robot has been previously designed acco
 8. Power supply: two 3.7V 9900mAh 18650 batteries connected in series within their battery holder that provide enough energy for the correct running of the robot.
 10. BNO055 gyroscope: allows the robot to make turns much more precisely by setting itself to specific degrees at the program.
 11. Front wheel mechanism: made by 3D printed pieces that hold the mechanism for the robot to make turns correctly.
-[For more information click here](Condiciones_Previas/Materiales_acabado.md)
+> [!WARNING]
+> Click the arrow below 👇 to expand the **Table of Contents**.  
+> Every item is a clickable link to a folder or README file in this repository.
+> [For more information click here](Condiciones_Previas/Materiales_acabado.md)
 
 ## Mechanics 
 ### Chassis 
 For the chassis design, we opted for a smaller one than in previous years to facilitate turns on the board We also addressed the lack of space for all the components by adding an upper level where we would place the circuit board, breadboard, shield, and later, the camera. However, we also had to adjust the design to accommodate a single rear motor for the robot's drive. Therefore, we drilled two holes in the lower level of the chassis (where the ultrasonic sensors, servo motor, and front wheel mechanism are located) for the wheels. We also maintained the front wheel design from previous years. We created a small protrusion to house the servo motor and all the necessary steering mechanism components. One of the three ultrasonic sensors, in this case, the center one, would also be located on this same protrusion.
 
 This forms the base of the robot, upon which the other platforms will be stacked using a series of pins screwed to the structure. These plates will be secured with screws and will serve as a support for the installation of the remaining necessary components.
-[For more information click here](Mecánica/Chasis.md)
+> [!WARNING]
+> Click the arrow below 👇 to expand the **Table of Contents**.  
+> Every item is a clickable link to a folder or README file in this repository.
+> [For more information click here](Mecánica/Chasis.md)
 
 ### Steering system
 The steering system created is composed by an amount of components designed in 3D which act as a support and it allows you to control the trajectory you decide to make, through turns, with the servo motor and the steering system. The steering system consists of two bars which are attached to articulated joints. The bar below is the guideline that is part of the servomotor shaft. This bar is connected to the bar below through an articulated joint, as aformentioned. When the bar from above move, it allows the steering system to guide the wheels. 
