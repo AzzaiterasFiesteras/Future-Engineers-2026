@@ -13,7 +13,7 @@ La próxima semana continuaremos enfocándonos en la programación del robot, co
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |Se deben proporcionar fotografías del equipo y del robot. Las fotografías del robot deben abarcar todos sus lados, ser nítidas, estar enfocadas y mostrar aspectos de su movilidad, potencia, sensibilidad y capacidad para superar obstáculos. Se puede hacer referencia a estas fotografías en las secciones 1, 2 y 3 del análisis. Es necesaria una foto del equipo para que los jueces puedan identificarlo durante las competiciones locales e internacionales. |
 | [Fotos del vehículo](Fotos_robot/ArchivodeFotos.md)  |
-| [Fotos del equipo](/Fotos_equipo/)  |     
+| [Fotos del equipo](Fotos_equipo/)  |     
 
 
 <table>
