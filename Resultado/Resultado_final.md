@@ -15,3 +15,15 @@ La próxima semana continuaremos enfocándonos en la programación del robot, co
 | [Fotos del vehículo](/Fotos_robot/)  |
 | [Fotos del equipo](/Fotos_equipo/)  |     
 
+
+<table>
+  <tr>
+    <td>
+      <img src="Resultado/Fotos_robot/lateralfrente1.jpeg" alt="Top View" height="600">
+      <p style="text-align: center; font-size: 24px; font-weight: bold;">WALL-E</p>
+    </td>
+  </tr>
+</table>
+
+
+[![](https://img.youtube.com/vi/cXj32blsBB0/0.jpg)](https://www.youtube.com/watch?v=cXj32blsBB0)
