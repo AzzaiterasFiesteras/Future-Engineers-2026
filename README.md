@@ -322,8 +322,7 @@ For programming, we use the Arduino IDE program. Once the program is complete, a
 ## Final results 
 > [!WARNING]
 > For seeing all the final products and our final result in the Open challenge, click the link below 👇 for seeing all the information with details. 
-> [For more information click here](Resultado/Resultado.md)                                                                                   |
-
+> [For more information click here](Resultado/Resultado_final.md)                                                                                 
 
 ## Bibliography 
 
