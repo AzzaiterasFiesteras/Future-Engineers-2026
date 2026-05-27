@@ -334,7 +334,7 @@ else {
 > [!WARNING]
 > Click the link below 👇 to see more information.
 > 
-> [For more information click here](Programacion/Explicacion_programa.md)                                                                                   |
+> [For more information click here](Programación/Explicacion_programa.md)                                                                                   |
 
 ## Compilation process
 For programming, we use the Arduino IDE program. Once the program is complete, all we have to do is upload it to the board. The process of uploading the board is very simple; we just connect the board to the computer using a wire and download the program. This way, the robot is ready to work.
@@ -354,7 +354,7 @@ For programming, we use the Arduino IDE program. Once the program is complete, a
 > 
 > [For more information about improvement proposals click here](Análisis/Propuestas_de_mejora.md)
 > 
-> [For more information about the conclusion and the acquired knowleadge click here](Conclusion/Conocimientos_adquiridos.md)
+> [For more information about the conclusion and the acquired knowleadge click here](Conclusiones/Conocimientos_adquiridos.md)
 
 
 ## Bibliography 
