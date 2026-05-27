@@ -64,6 +64,7 @@
 ## Introduction 
 > [!WARNING]
 > Click the link below 👇 to see more information about the introduction.
+> 
 > [For more information click here](Introduccion/)
 
 > [!IMPORTANT]
@@ -74,13 +75,15 @@
 ### Presentation 
 Our team´s robot is called WALLE. WALLE was designed for the Future Engineers challenge of the World Robot Olympiad. In this challenge we must complete 2 rounds. The first one, called Open Challenge, consists of completing 3 full laps around a board whose internal walls are placed randomly. The second, called Obstacle Challenge, also requires three laps on a board changing, but with the added difficulty of avoiding obstacles. Depending on the obstacles´colors (red or green) it must be avoided from the right side or the left side.
 > [!WARNING]
-> Click the link below 👇 to see more information.  
+> Click the link below 👇 to see more information.
+> 
 > [For more information click here](Introduccion/Objetivo.md)
 
 ### Initial Conditions
 To properly carry out this project, this robot has been previously designed according to some specific rules and conditions. We had complete freedom to use any material, such as plastic, wood or even Lego pieces. However, we had an limitation in the robot´s size. The robot can not exceed 30cm x 30cm. We adapted its design in all these conditions, with special care in the front steering gear, since it was not allow to make turns with the independent motors´control as they had to be conected in the same pin. This force us to design a front steering gear with a servomotor.
 > [!WARNING]
-> Click the link below 👇 to see more information.  
+> Click the link below 👇 to see more information.
+> 
 > [For more information click here](Condiciones_Previas/Condiciones_Previas.md)
 
 ## Materials and hardware - software relation
@@ -95,7 +98,8 @@ To properly carry out this project, this robot has been previously designed acco
 10. BNO055 gyroscope: allows the robot to make turns much more precisely by setting itself to specific degrees at the program.
 11. Front wheel mechanism: made by 3D printed pieces that hold the mechanism for the robot to make turns correctly.
 > [!WARNING]
-> Click the link below 👇 to see more information.  
+> Click the link below 👇 to see more information.
+> 
 > [For more information click here](Condiciones_Previas/Materiales_acabado.md)
 
 ## Mechanics 
@@ -105,20 +109,23 @@ For the chassis design, we opted for a smaller one than in previous years to fac
 > This forms the base of the robot, upon which the other platforms will be stacked using a series of pins screwed to the structure. These plates will be secured with screws and will serve as a support for the installation of the remaining necessary components.
 
 > [!WARNING]
-> Click the link below 👇 to see more information.  
+> Click the link below 👇 to see more information.
+>  
 > [For more information click here](Mecánica/Chasis.md)
 
 ### Steering system
 The steering system created is composed by an amount of components designed in 3D which act as a support and it allows you to control the trajectory you decide to make, through turns, with the servo motor and the steering system. The steering system consists of two bars which are attached to articulated joints. The bar below is the guideline that is part of the servomotor shaft. This bar is connected to the bar below through an articulated joint, as aformentioned. When the bar from above move, it allows the steering system to guide the wheels. 
 > [!WARNING]
-> Click the link below 👇 to see more information.  
+> Click the link below 👇 to see more information.
+> 
 >[For more information click here](Mecánica/Direccion.md)
 
 ## Electronics
 ### Power system
 One of the the major problems was being able to prove the necessary energy to all the components. o solve this, we used two rechargeable 18650 batteries of 9900 mAh each, connected in series to a battery holder. Other options, such as AAA batteries in series, 9V batteries, or even rechargeable 9V batteries of 1300 mAh, were not efficient enough and caused voltage drops.
 > [!WARNING]
-> Click the link below 👇 to see more information.  
+> Click the link below 👇 to see more information.
+> 
 > [For more information click here](Electrónica/Alimentacion.md)
 
 ## Components
@@ -142,7 +149,8 @@ We took the Arduino Uno board as we were already familiar with it.
 We used the 18650 batteries for our robot. Their maximum voltage is 4.2V, and the battery capacity is 9900mAh. These batteries are also rechargeable. We chose these over others due to the large number of components we had to power.
 
 > [!WARNING]
-> Click the link below 👇 to see more information.  
+> Click the link below 👇 to see more information.
+> 
 > [For more information click here](Electrónica/Componentes.md)
 
 ## Programme
@@ -324,7 +332,8 @@ else {
 | **`Ranging()`**         | `int`         | Measures distance                        | Returns the distance detected by the ultrasonic sensor    
 
 > [!WARNING]
-> Click the link below 👇 to see more information.  
+> Click the link below 👇 to see more information.
+> 
 > [For more information click here](Programacion/Explicacion_programa.md)                                                                                   |
 
 ## Compilation process
@@ -332,15 +341,19 @@ For programming, we use the Arduino IDE program. Once the program is complete, a
 
 ## Final results 
 > [!WARNING]
-> For seeing all the final products and our final result in the Open challenge, click the link below 👇 for seeing all the information with details. 
+> For seeing all the final products and our final result in the Open challenge, click the link below 👇 for seeing all the information with details.
+> 
 > [For more information click here](Resultado/Resultado_final.md)
 
 ## Conclusion and Analysis
 
 > [!WARNING]
 > For more information about all the acquired knowleadge and detected problems, click the link below  👇 for seeing all the information with details.
+> 
 > [For more information about detected problems click here](Análisis/Problemas_detectados.md)
+> 
 > [For more information about improvement proposals click here](Análisis/Propuestas_de_mejora.md)
+> 
 > [For more information about the conclusion and the acquired knowleadge click here](Conclusion/Conocimientos_adquiridos.md)
 
 
