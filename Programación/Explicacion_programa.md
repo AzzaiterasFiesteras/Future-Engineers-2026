@@ -73,7 +73,7 @@ Antes de desarrollar la lógica de la programación, lo primero fue instalar las
 - `int centroServo = 35; ` que es la posición del servomotor en la cual el sistema de dirección del robot está orientado para ir recto.
 - `int sentido = 0; ` el robot identificará el sentido al que debe girar en el primer giro. Para esto era necesario crear una variable para la cual el valor 1 sea girar hacia la derecha y el valor 2 para la izquierda. Es por esto, que desde el principio del código establecemos que sea 0.
 - `int contadorGiros = 0;` gracias a esta variable que cuenta giros, el robot es capaz de pararse al completar las 3 vueltas (12 giros en total).
-- `contador1` y `contador2`:
+- `contador1` y `contador2`: estos contadores se utilizan para asegurar que la situación no sea una lectura aleatoria o temporal, sino algo que persista en el tiempo. En otras palabras, es una forma de confirmar la fiabilidad de los datos del sensor. Básicamente, el robot no reacciona a una sola medición. En cambio, espera a que el problema se repita varias veces y solo entonces responde deteniéndose para evitar colisiones o continuar en una situación peligrosa.
 - `bool start = false`: Este tipo de variable solo puede tener dos valores: true (verdadero) o false (falso). En este caso empieza en false, lo que significa que el sistema está apagado. Lo usaremos para iniciar el programa desde el pulsador.
   
 ```C++
