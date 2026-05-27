@@ -45,12 +45,12 @@
      - Motor
      - Bateries
  6. [Programme](/Programación/)
-    - [Programme development](/Programación/Explicación_programa.md)
+    - [Programme development](/Programación/Explicacion_programa.md)
     - [Flow charts](/Programación/Pensamiento_lógico.md)
   7. [3D Files](/Archivos_en3D/)
   9. [Analysis](/Análisis/)
      - [Detected problems](/Análisis/Problemas_detectados.md)
-     - [Improvement proposals](/Análisis/Diagramas_flujo.md))
+     - [Improvement proposals](/Análisis/Propuestas_de_mejora.md))
    10. [Final results](/Resultado/)
 11. [Conclusion](/Conclusiones/)
     - Acquired knowleadge
