@@ -34,7 +34,7 @@
    - [Steering system](/Mecánica/Direccion.md)
      
 5. [Electronics](/Electrónica/)
-   - [Power system](/Electrónica/Alimentación.md)
+   - [Power system](/Electrónica/Alimentacion.md)
    - [Design](/Electrónica/Diseño.md)
    - [Components](/Electrónica/Componentes.md)
      - Servomotor
