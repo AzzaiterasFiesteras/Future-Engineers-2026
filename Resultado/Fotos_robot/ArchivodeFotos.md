@@ -22,7 +22,7 @@
   </tr>
   <tr>
     <td>
-      <img src="RPerfilderecho.jpeg" alt="Right View" height="300">
+      <img src="Perfilderecho.jpeg" alt="Right View" height="300">
       <p style="text-align: center; font-size: 24px; font-weight: bold;">Right View</p>
     </td>
     <td>
