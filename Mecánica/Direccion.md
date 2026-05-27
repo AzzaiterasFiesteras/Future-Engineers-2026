@@ -27,4 +27,5 @@ En el centro del eje se encuentra un servomotor, que gira a izquierda o derecha.
 Todas estas piezas han sido diseñadas en la interfaz de TinkerCad en 3D y posteriormente impresas en una impresora 3D la cual disponemos en el instituto. Asimismo, todas las piezas han sido colocadas y atornilladas en la chasis. 
 > [!TIP]
 > Click the link below 👇 to see all 3D designs in .STL.
+> 
 > [For more information click here](Archivos_en3D/)
