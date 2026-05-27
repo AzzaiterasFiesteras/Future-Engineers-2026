@@ -3,7 +3,7 @@
   <tr>
     <td>
       <img src="lateralfrente1.jpeg" alt="Top View" height="600">
-      <p style="text-align: center; font-size: 24px; font-weight: bold;">Isometric View</p>
+      <p style="text-align: center; font-size: 24px; font-weight: bold;">WALL-E</p>
     </td>
   </tr>
 </table>
@@ -12,7 +12,7 @@
 <table>
   <tr>
     <td>
-      <img src="vistaabajo.jpeg" alt="Top View" height="650">
+      <img src="vistaarriba.jpeg" alt="Top View" height="650">
       <p style="text-align: center; font-size: 24px; font-weight: bold;">Top View</p>
     </td>
     <td>
