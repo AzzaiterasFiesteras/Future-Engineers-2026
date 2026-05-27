@@ -1,5 +1,16 @@
 <h1 align="center">Future Engineers 2026 </h1>
 
+<table>
+  <tr>
+    <td>
+      <img src="Fotos_robot/lateralfrente1.jpeg" alt="Top View" height="600">
+      <p style="text-align: center; font-size: 24px; font-weight: bold;">WALL-E</p>
+    </td>
+  </tr>
+</table>
+
+
+
  ### 📌 Table of Contents
 
 > [!TIP]
