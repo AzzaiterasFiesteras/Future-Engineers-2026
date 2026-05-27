@@ -88,7 +88,7 @@ To properly carry out this project, this robot has been previously designed acco
 ### Chassis 
 For the chassis design, we opted for a smaller one than in previous years to facilitate turns on the board We also addressed the lack of space for all the components by adding an upper level where we would place the circuit board, breadboard, shield, and later, the camera. However, we also had to adjust the design to accommodate a single rear motor for the robot's drive. Therefore, we drilled two holes in the lower level of the chassis (where the ultrasonic sensors, servo motor, and front wheel mechanism are located) for the wheels. We also maintained the front wheel design from previous years. We created a small protrusion to house the servo motor and all the necessary steering mechanism components. One of the three ultrasonic sensors, in this case, the center one, would also be located on this same protrusion.
 
-This forms the base of the robot, upon which the other platforms will be stacked using a series of pins screwed to the structure. These plates will be secured with screws and will serve as a support for the installation of the remaining necessary components.
+> This forms the base of the robot, upon which the other platforms will be stacked using a series of pins screwed to the structure. These plates will be secured with screws and will serve as a support for the installation of the remaining necessary components.
 > [!WARNING]
 > Click the link below 👇 to see more information.  
 > [For more information click here](Mecánica/Chasis.md)
@@ -160,7 +160,7 @@ Before developing the program logic, the first step was to install all the neces
 
 After that, all the main variables of the system were defined. The motor driver L298N pins were set (int ENA = 5, int IN1 = 6, int IN2 = 7) to control motor speed and direction. The servo motor pin was assigned (const int pinservo = 9). The variable float anguloObjetivo represents the target angle the robot must reach. int centroServo = 35 defines the position where the steering system is completely straight.
 
-In addition, int sentido = 0 is used to determine the initial turning direction (1 for right, 2 for left), starting at 0 until it is defined during execution. int contadorGiros = 0 is used to count the corners so the robot can stop after completing 3 laps (12 turns). The variables contador1 and contador2 are used to manage sensor-based detection conditions. Finally, bool start = false is a boolean variable that can only be true or false, initialized as false to keep the system off until it is activated by the push button.
+> In addition, int sentido = 0 is used to determine the initial turning direction (1 for right, 2 for left), starting at 0 until it is defined during execution. int contadorGiros = 0 is used to count the corners so the robot can stop after completing 3 laps (12 turns). The variables contador1 and contador2 are used to manage sensor-based detection conditions. Finally, bool start = false is a boolean variable that can only be true or false, initialized as false to keep the system off until it is activated by the push button.
 ``` C++
 #define TRIG_IZQ 8
 #define ECHO_IZQ 10
@@ -172,8 +172,8 @@ Ultrasonic ultraCENTRO(TRIG_CENTRO, ECHO_CENTRO, 60000);
 #define ECHO_DERECH 12
 Ultrasonic ultraDERECH(TRIG_DERECH, ECHO_DERECH, 60000);
 ```
-As we already know, ultrasonic sensors are made up of a trigger pin (which sends out a signal) and an echo pin (which receives the reflected signal). By measuring the time it takes for the signal to bounce back, we can calculate the distance to an object.
-To implement this in the program, we had to define which Arduino pins were connected to each trigger and echo pin of every sensor. The configuration was set as follows:
+> As we already know, ultrasonic sensors are made up of a trigger pin (which sends out a signal) and an echo pin (which receives the reflected signal). By measuring the time it takes for the signal to bounce back, we can calculate the distance to an object.
+> To implement this in the program, we had to define which Arduino pins were connected to each trigger and echo pin of every sensor. The configuration was set as follows:
 - Trigger (pin 8) and echo (pin 10) = left ultrasonic sensor
 - Trigger (pin 3) and echo (pin 4) = center ultrasonic sensor
 - Trigger (pin 11) and echo (pin 12) = right ultrasonic sensor
@@ -198,7 +198,7 @@ void setup() {
   prepararSensor(); 
 }
 ```
-The void setup() function is created at the beginning of the program and is executed only once when the system starts. Its main purpose is to initialize all the components required for the robot to operate correctly.
+> The void setup() function is created at the beginning of the program and is executed only once when the system starts. Its main purpose is to initialize all the components required for the robot to operate correctly.
 In our case, the serial port is activated to allow monitoring and calibration of sensor readings through the Serial Monitor. The servo motor pin is also configured so the steering system can start working from the beginning. In addition, the motors and the push button are initialized.A conditional statement is included to check whether the gyroscope is detected. If the BNO055 sensor is not found, an error message is printed in the serial monitor and the system is blocked to prevent further execution.
 Finally, the gyroscope calibration function is called so the robot can determine its initial reference direction, often referred to as “north.”
 
@@ -219,7 +219,7 @@ Finally, the gyroscope calibration function is called so the robot can determine
     int cmIzq = ultraIZQ.Ranging(CM);
     int cmDer = ultraDERECH.Ranging(CM);
 ```
-In the first part of the void loop, we programmed the push button so that when it is pressed, the whole program starts running. At the same time, it prints the number “2” in the Serial Monitor to verify that the button is working correctly. We also added the final race logic: after 12 turns (which equals three complete laps), the robot stops. After this, the program reads the sensor data and stores it in variables for later use. First, it measures the distances from the three ultrasonic sensors, meaning each sensor returns a value in centimeters. Then, the variable anguloAhora stores the result of the obtenerGrados() function, which returns the robot’s current orientation angle. This value is stored as a float because it can include decimal values.
+> In the first part of the void loop, we programmed the push button so that when it is pressed, the whole program starts running. At the same time, it prints the number “2” in the Serial Monitor to verify that the button is working correctly. We also added the final race logic: after 12 turns (which equals three complete laps), the robot stops. After this, the program reads the sensor data and stores it in variables for later use. First, it measures the distances from the three ultrasonic sensors, meaning each sensor returns a value in centimeters. Then, the variable anguloAhora stores the result of the obtenerGrados() function, which returns the robot’s current orientation angle. This value is stored as a float because it can include decimal values.
 ``` C++
   if (cmCentro < 80) {
       contador1++;
@@ -239,7 +239,7 @@ if (contador1>2 || contador2>2) {
       analogWrite(ENA, 0);
       delay(500);
 ```
-In these functions, the program uses two counters to detect when the robot needs to turn. First, the robot continuously checks the distances measured by its sensors. If it detects that it is getting too close to walls several times in a row, or if it detects an unusual situation where there is a large difference between the left and right sensor readings, it starts increasing these counters. These counters are used to make sure the situation is not just a random or temporary reading, but something that persists over time. In other words, it is a way to confirm that the sensor data is reliable. Basically, the robot does not react to a single measurement. Instead, it waits until the problem is repeated several times, and only then it responds by stopping to avoid crashing or continuing in an unsafe situation.
+> In these functions, the program uses two counters to detect when the robot needs to turn. First, the robot continuously checks the distances measured by its sensors. If it detects that it is getting too close to walls several times in a row, or if it detects an unusual situation where there is a large difference between the left and right sensor readings, it starts increasing these counters. These counters are used to make sure the situation is not just a random or temporary reading, but something that persists over time. In other words, it is a way to confirm that the sensor data is reliable. Basically, the robot does not react to a single measurement. Instead, it waits until the problem is repeated several times, and only then it responds by stopping to avoid crashing or continuing in an unsafe situation.
 ```C++
      if (contadorGiros == 0) {
         if (cmIzq < cmDer) sentido = 1; 
@@ -255,7 +255,7 @@ In these functions, the program uses two counters to detect when the robot needs
       Serial.println(contadorGiros);
     }
 ```
-It is at this point, when the robot reaches the first wall, that it decides whether the circuit will be followed on the left or on the right side. To do this, the program compares the distances measured on both sides. If the left distance is smaller than the right one, the variable sentido is set to 1, which corresponds to turning right. Otherwise, sentido is set to 2, which corresponds to turning left. Based on this decision, the robot executes the turn: if sentido is 1, it performs a 90-degree turn to the right, and if it is 2, it performs a -90-degree turn to the left.
+>  It is at this point, when the robot reaches the first wall, that it decides whether the circuit will be followed on the left or on the right side. To do this, the program compares the distances measured on both sides. If the left distance is smaller than the right one, the variable sentido is set to 1, which corresponds to turning right. Otherwise, sentido is set to 2, which corresponds to turning left. Based on this decision, the robot executes the turn: if sentido is 1, it performs a 90-degree turn to the right, and if it is 2, it performs a -90-degree turn to the left.
 At the same time, each turn is counted using a counter, since this value will later be used to stop the robot after completing the required number of laps. To verify that the system is working correctly, the current number of corners (and therefore turns) is displayed in the Serial Monitor.
 
 ```C++
@@ -281,7 +281,7 @@ else {
   }
 }
 ```
-However, if the robot does not detect any walls, it means that the path is clear. In this case, the motors are activated and the speed is increased. At the same time, the direction is continuously adjusted to ensure the robot moves in a straight line. If the robot deviates from the correct path, the servo automatically corrects the steering to bring it back to a straight trajectory.
+> However, if the robot does not detect any walls, it means that the path is clear. In this case, the motors are activated and the speed is increased. At the same time, the direction is continuously adjusted to ensure the robot moves in a straight line. If the robot deviates from the correct path, the servo automatically corrects the steering to bring it back to a straight trajectory.
 
 ## Code functions
 | Function                |        Type   | What does it do?                         | Use in the program                                                                                                                            |
@@ -306,7 +306,9 @@ However, if the robot does not detect any walls, it means that the path is clear
 | **`begin()`**           | `bool`        | Initializes the BNO055 sensor            | Checks whether the sensor is working correctly                                                                                                |
 | **`getEvent()`**        | `void`        | Retrieves sensor data                    | Reads orientation and motion data                                                                                                             |
 | **`getCalibration()`**  | `void`        | Checks calibration level                 | Verifies gyroscope precision                                                                                                                  |
-| **`Ranging()`**         | `int`         | Measures distance                        | Returns the distance detected by the ultrasonic sensor     > [!WARNING]
+| **`Ranging()`**         | `int`         | Measures distance                        | Returns the distance detected by the ultrasonic sensor    
+
+> [!WARNING]
 > Click the link below 👇 to see more information.  
 > [For more information click here](Programacion/Explicacion_programa.md)                                                                                   |
 
