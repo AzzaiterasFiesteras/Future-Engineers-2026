@@ -6,3 +6,8 @@ Esta constituye la base del robot, sobre la cual se irán apilando las demás pl
 <p align="center">
 <img src="fotos_mecánica/CHASIS.png" width="800" height="700" />
 </p>
+
+> [!TIP]
+> Click the link below 👇 to see all 3D designs in .STL.
+> 
+> [For more information click here](Archivos_en3D/)
