@@ -3,6 +3,7 @@
 <table>
   <tr>
     <td>
+      <p align="center">
       <img src="Introduccion/fotos_introduccion/logo.png" alt="Top View" width="700" height="700"
     </td>
   </tr>
