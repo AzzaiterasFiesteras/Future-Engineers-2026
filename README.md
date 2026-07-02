@@ -3,8 +3,7 @@
 <table>
   <tr>
     <td>
-      <img src="Introduccion/fotos_introduccion/logo.png" alt="Top View" height="1000">
-      <p style="text-align: center; font-size: 24px; font-weight: bold;">WALL-E</p>
+      <img src="Introduccion/fotos_introduccion/logo.png" alt="Top View" height="1000"
     </td>
   </tr>
 </table>
