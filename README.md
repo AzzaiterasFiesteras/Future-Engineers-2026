@@ -80,7 +80,7 @@
       <sub>Wiring, Circuit Design, Power Management</sub>
     </td>
     <td align="center" width="33%">
-      <img src="https://github.com/oracleapolloo/WRO-FUTURE-ENGINEERS-2025/blob/d02ef5504a3baa63b37da2d55a1e29b3d79bb3eb/other/aarnav%20pic%20wro%20crop.jpg?raw=true" width="100%" style="border-radius: 8px;"><br>
+      <img src="Resultado/Fotos_equipo/fotocoach.jpg" width="100%" style="border-radius: 8px;"><br>
       <strong>ANTONIO MUÑOZ PANCORBO</strong><br>
       <em> Coach</em><br>
       <sub>Support and guidance </sub>
