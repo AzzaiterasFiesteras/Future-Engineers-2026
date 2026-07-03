@@ -59,7 +59,7 @@ La placa que hemos utilizado para nuestro robot ha sido la Arduino Uno R3. Decid
 
 | <img src="fotos_electronica/escudofoto.jpg"> | **Specifications** |
 |------------------------------|------------------------------|
-| **Model:**Arduino Uno R3 | **Operating Voltage:** 5V  |
+| **Model:** Arduino Uno R3 | **Operating Voltage:** 5V  |
 | **Input Voltage:** 7–12V recommended (6–20V limit) | **Clock Frequency:** 16 MHz |
 |**Microcontroller:** ATmega328P|**Memory:** 32 KB Flash, 2 KB SRAM, 1 KB EEPROM|
 | **Digital I/O Pins:** 14 (6 PWM outputs) |**Analog Inputs:** 6 (10-bit ADC) |
@@ -72,6 +72,16 @@ La placa que hemos utilizado para nuestro robot ha sido la Arduino Uno R3. Decid
 
 ## Motor
 Para conseguir que el robot se pueda mover, hemos utilizado solo un motor que van conectados a las ruedas traseras. No pusimos motores en las ruedas delanteras porque no eran necesarios. En vez de eso, decidimos controlar la dirección del robot usando dos ruedas delanteras que están conectadas a un servomotor. De tal manera que el servomotor permite que el robot se mueva hacia la izquierda o hacia la derecha, encargándose de su dirección.
+
+| <img src="fotos_electronica/escudofoto.jpg"> | **Specifications** |
+|------------------------------|------------------------------|
+| **Model:** TT DC Gear Motor| **Operating Voltage:** 3V – 6V DC  |
+|**Rated Voltage:** 6V DC | **No-Load Speed:** ≈200 RPM @ 6V (varies by gear ratio) |
+|**Stall Current:** ≈1.2 A|**No-Load Current:** ≈150–250 mA|
+|**Output Shaft:** Double D Shaft |**Gearbox Type:** Plastic reduction gearbox|
+|**Motor Type:** Brushed DC Motor|**Features:** High torque, low cost, lightweight, suitable for robot cars |
+| 🔗 **[Buy Here](https://www.lcsc.com/product-image/C112633.html)** | **Function:** Provides rotational motion to drive robot wheels and other small mechanical systems. |
+
 <p align="center">
 <img src="fotos_electronica/IMG_2477.jpeg" width="700" height="700" />
 </p>
