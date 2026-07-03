@@ -42,12 +42,30 @@ El escudo que hemos utilizado ha sido el modelo L298N, y lo usamos principalment
 ## Sensores de ultrasonidos 
 Para la correcta programación de nuestro robot necesitábamos disponer de tres sensores ultrasónicos de distancia para conseguir que el robot no impactara ni tocara ninguna pared. Para la implementación de estos en el chasis utilizamos una estructura diseñada previamente en la interfaz de TinkerCad y la imprimimos en 3D. Esto nos permitió sujetar bien los tres sensores de ultrasonidos. De tal modo que nos aseguramos que los sensores se mantienen en su sitio sin caerse mientras hacíamos pruebas.
 
+| <img src="fotos_electronica/escudofoto.jpg"> | **Specifications** |
+|------------------------------|------------------------------|
+| **Model:** HC-SRO4 | **Operating Voltage:** 5V DC |
+| **Logic Voltage:** 5V TTL compatible | **PWM Frequency:** 40 kHz |
+| **Measuring Range:** 2 cm – 400 cm |**Measurement Accuracy:** ±3 mm|
+| **Control Interface:** Trigger (TRIG) + Echo (ECHO) digital pins |**Built-in Features:** Non-contact distance measurement, low power consumption, automatic echo detection |
+| 🔗 **[Buy Here](https://www.lcsc.com/product-image/C112633.html)** | **Function:** Measures the distance to objects by transmitting and receiving ultrasonic waves|
+
 <p align="center">
 <img src="fotos_electronica/IMG_1357.jpeg" width="700" height="700" />
 </p>
 
 ## Placa 
 La placa que hemos utilizado para nuestro robot ha sido la Arduino Uno R3. Decidimos usar esta placa porque ya habíamos trabajado con Arduino en otras ocasiones y nos parecía más fácil de entender. Además, es muy útil para conectar sensores, cables y otros componentes debido a su multitud de pines, y luego programarla para que funcione como queremos. Gracias a esto, pudimos hacer la programación del robot de forma más sencilla y aprender mejor cómo funciona la programación y la electrónica.
+
+| <img src="fotos_electronica/escudofoto.jpg"> | **Specifications** |
+|------------------------------|------------------------------|
+| **Model:**Arduino Uno R3 | **Operating Voltage:** 5V  |
+| **Input Voltage:** 7–12V recommended (6–20V limit) | **Clock Frequency:** 16 MHz |
+|**Microcontroller:** ATmega328P|**Memory:** 32 KB Flash, 2 KB SRAM, 1 KB EEPROM|
+| **Digital I/O Pins:** 14 (6 PWM outputs) |**Analog Inputs:** 6 (10-bit ADC) |
+| **Communication Interfaces:** UART, I²C, SPI, USB|**Features:** USB Type-B, ICSP header, reset button, onboard voltage regulator, replaceable ATmega328P |
+| 🔗 **[Buy Here](https://www.lcsc.com/product-image/C112633.html)** | **Function:** Programmable microcontroller board for controlling sensors, actuators, and embedded electronic systems. |
+
 <p align="center">
 <img src="fotos_electronica/IMG_2478.jpeg" width="700" height="700" />
 </p>
