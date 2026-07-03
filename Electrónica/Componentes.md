@@ -12,6 +12,14 @@
 ## Servomotor
 Basándonos en experiencias anteriores, directamente hemos optado por el servomotor MG996R ya que funciona controlando ángulos de giro en lugar de controlar la velocidad del propio servomotor. Esto facilita bastante todo ya que ahora podemos mover las ruedas delanteras con más precisión y requiriendo mucho menos esfuerzo. El modelo que elegimos fue el MG996R, como ya he dicho, ya que es conocido por ser más potente y por tener un buen rango de movimiento para este tipo de proyectos.
 
+| <img src="fotos_electronica/servofoto.jpg"> | **Specifications** |
+|------------------------------|------------------------------|
+| **Model:** IFX9201SG | **Operating Voltage:** 5.5V – 45V |
+| **Logic Voltage:** 3.3V / 5V compatible | **PWM Frequency:** Up to 20 kHz |
+| **Max Continuous Current:** 5A | **Max Peak Current:** 8A per channel |
+| **Control Interface:** PWM + Direction pins | **Built-in Protections:** Overtemperature, Overcurrent, Undervoltage, Short-to-GND/Battery |
+| 🔗 **[Buy Here](https://www.lcsc.com/product-image/C112633.html)** | **Function:** Controls drive motors |
+
 <p align="center">
 <img src="fotos_electronica/IMG_1356.jpeg" width="700" height="700" />
 </p>
