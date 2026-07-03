@@ -27,7 +27,7 @@ Basándonos en experiencias anteriores, directamente hemos optado por el servomo
 ## Escudo
 El escudo que hemos utilizado ha sido el modelo L298N, y lo usamos principalmente para hacer las conexiones de los motores. Este escudo nos ha permitido controlar el movimiento de los motores de una forma más sencilla, ya que se encarga de enviar la energía necesaria para que funcionen correctamente. Además ya eramos conscientes de la incompatibilidad del escudo DRV8835 de Pololu con nuestros motores. Por lo tanto, seleccionamos directamente el modelo L298N.
 
-| <img src="fotos_electronica/escudofoto.jpg"> | **Specifications** |
+| <img src="fotos_electronica/escudofoto.png"> | **Specifications** |
 |------------------------------|------------------------------|
 | **Model:** L298N Dual H-Bridge Motor Driver Module | **Operating Voltage:** 5V – 35V (motor supply) |
 | **Logic Voltage:** 5V TTL compatible | **PWM Frequency:** Up to 25–30 kHz |
@@ -57,7 +57,7 @@ Para la correcta programación de nuestro robot necesitábamos disponer de tres 
 ## Placa 
 La placa que hemos utilizado para nuestro robot ha sido la Arduino Uno R3. Decidimos usar esta placa porque ya habíamos trabajado con Arduino en otras ocasiones y nos parecía más fácil de entender. Además, es muy útil para conectar sensores, cables y otros componentes debido a su multitud de pines, y luego programarla para que funcione como queremos. Gracias a esto, pudimos hacer la programación del robot de forma más sencilla y aprender mejor cómo funciona la programación y la electrónica.
 
-| <img src="fotos_electronica/escudofoto.jpg"> | **Specifications** |
+| <img src="fotos_electronica/placafoto.jpg"> | **Specifications** |
 |------------------------------|------------------------------|
 | **Model:** Arduino Uno R3 | **Operating Voltage:** 5V  |
 | **Input Voltage:** 7–12V recommended (6–20V limit) | **Clock Frequency:** 16 MHz |
@@ -73,7 +73,7 @@ La placa que hemos utilizado para nuestro robot ha sido la Arduino Uno R3. Decid
 ## Motor
 Para conseguir que el robot se pueda mover, hemos utilizado solo un motor que van conectados a las ruedas traseras. No pusimos motores en las ruedas delanteras porque no eran necesarios. En vez de eso, decidimos controlar la dirección del robot usando dos ruedas delanteras que están conectadas a un servomotor. De tal manera que el servomotor permite que el robot se mueva hacia la izquierda o hacia la derecha, encargándose de su dirección.
 
-| <img src="fotos_electronica/escudofoto.jpg"> | **Specifications** |
+| <img src="fotos_electronica/motorfoto.jpg"> | **Specifications** |
 |------------------------------|------------------------------|
 | **Model:** TT DC Gear Motor| **Operating Voltage:** 3V – 6V DC  |
 |**Rated Voltage:** 6V DC | **No-Load Speed:** ≈200 RPM @ 6V (varies by gear ratio) |
