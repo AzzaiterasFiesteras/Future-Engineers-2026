@@ -12,13 +12,13 @@
 ## Servomotor
 Basándonos en experiencias anteriores, directamente hemos optado por el servomotor MG996R ya que funciona controlando ángulos de giro en lugar de controlar la velocidad del propio servomotor. Esto facilita bastante todo ya que ahora podemos mover las ruedas delanteras con más precisión y requiriendo mucho menos esfuerzo. El modelo que elegimos fue el MG996R, como ya he dicho, ya que es conocido por ser más potente y por tener un buen rango de movimiento para este tipo de proyectos.
 
-| <img src="fotos_electronica/servofoto.jpg"> | **Specifications** |
+| <img src="fotos_electronica/MG996R.jpg"> | **Specifications** |
 |------------------------------|------------------------------|
-| **Model:** IFX9201SG | **Operating Voltage:** 5.5V – 45V |
-| **Logic Voltage:** 3.3V / 5V compatible | **PWM Frequency:** Up to 20 kHz |
-| **Max Continuous Current:** 5A | **Max Peak Current:** 8A per channel |
-| **Control Interface:** PWM + Direction pins | **Built-in Protections:** Overtemperature, Overcurrent, Undervoltage, Short-to-GND/Battery |
-| 🔗 **[Buy Here](https://www.lcsc.com/product-image/C112633.html)** | **Function:** Controls drive motors |
+| **Model:** MG996R | **Operating Voltage:** 4.8V – 7.2V |
+| **Logic Voltage:** 3.3V / 5V compatible | **PWM Frequency:** 50 Hz (20 ms period) |
+| **Stall Torque:** 9.4 kg·cm @ 4.8V / 11 kg·cm @ 6.0V | **Features:** Digital servo, metal gears, dual ball bearings, approximately 180° rotation|
+| **Control Interface:** PWM (3-wire: Signal, VCC, GND) | **Operating speed:** 0.17 s/60° @ 4.8V, 0.14 s/60° @ 6.0V |
+| 🔗 **[Buy Here](https://www.lcsc.com/product-image/C112633.html)** | **Function:** Controls the steering system |
 
 <p align="center">
 <img src="fotos_electronica/IMG_1356.jpeg" width="700" height="700" />
