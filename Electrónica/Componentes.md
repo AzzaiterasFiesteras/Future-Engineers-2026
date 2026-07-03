@@ -26,6 +26,15 @@ Basándonos en experiencias anteriores, directamente hemos optado por el servomo
 
 ## Escudo
 El escudo que hemos utilizado ha sido el modelo L298N, y lo usamos principalmente para hacer las conexiones de los motores. Este escudo nos ha permitido controlar el movimiento de los motores de una forma más sencilla, ya que se encarga de enviar la energía necesaria para que funcionen correctamente. Además ya eramos conscientes de la incompatibilidad del escudo DRV8835 de Pololu con nuestros motores. Por lo tanto, seleccionamos directamente el modelo L298N.
+
+| <img src="fotos_electronica/escudofoto.jpg"> | **Specifications** |
+|------------------------------|------------------------------|
+| **Model:** L298N Dual H-Bridge Motor Driver Module | **Operating Voltage:** 5V – 35V (motor supply) |
+| **Logic Voltage:** 5V TTL compatible | **PWM Frequency:** Up to 25–30 kHz |
+| **Max Continuous Current:** 2A per channel  |**Max Peak Current:** 3A per channel (short duration)|
+| **Control Interface:** PWM + Direction pins (IN1–IN4, ENA, ENB) |**Built-in Features:** Dual H-Bridge, 5V regulator (78M05), thermal protection, flyback diodes |
+| 🔗 **[Buy Here](https://www.lcsc.com/product-image/C112633.html)** | **Function:** Controls the speed and direction of DC motors and stepper motors using PWM and H-Bridge switching |
+
 <p align="center">
 <img src="fotos_electronica/IMG_1355.jpeg" width="700" height="700" />
 </p>
