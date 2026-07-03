@@ -71,10 +71,10 @@
       <img src="Introduccion/fotos_introduccion/EVA_POSANDO.jpg" width="100%" style="border-radius: 8px;"><br>
       <strong>EVA ESPINOSA ORTIZ</strong><br>
       <em>Lead programmer</em><br>
-      <sub>Planning, Analysis, Iteration, Strategy Making</sub>
+      <sub>Sensor Integration, Logic, Obstacle Avoidance<</sub>
     </td>
     <td align="center" width="33%">
-      <img src="https://github.com/oracleapolloo/WRO-FUTURE-ENGINEERS-2025/blob/d02ef5504a3baa63b37da2d55a1e29b3d79bb3eb/other/mifzal%20pic%20wro%20crop.jpg?raw=true" width="100%" style="border-radius: 8px;"><br>
+      <img src="Resultado/1000102223.jpg" width="100%" style="border-radius: 8px;"><br>
       <strong>LIDIA REQUENA TORRES</strong><br>
       <em>Hardware Engineer</em><br>
       <sub>Wiring, Circuit Design, Power Management</sub>
@@ -83,7 +83,7 @@
       <img src="https://github.com/oracleapolloo/WRO-FUTURE-ENGINEERS-2025/blob/d02ef5504a3baa63b37da2d55a1e29b3d79bb3eb/other/aarnav%20pic%20wro%20crop.jpg?raw=true" width="100%" style="border-radius: 8px;"><br>
       <strong>ANTONIO MUÑOZ PANCORBO</strong><br>
       <em> Coach</em><br>
-      <sub>Sensor Integration, Logic, Obstacle Avoidance</sub>
+      <sub>Support and guidance </sub>
     </td>
   </tr>
 </table>
