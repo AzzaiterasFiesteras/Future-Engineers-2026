@@ -71,7 +71,7 @@
       <img src="Introduccion/fotos_introduccion/EVA_POSANDO.jpg" width="100%" style="border-radius: 8px;"><br>
       <strong>EVA ESPINOSA ORTIZ</strong><br>
       <em>Lead programmer</em><br>
-      <sub>Sensor Integration, Logic, Obstacle Avoidance<</sub>
+      <sub>Sensor Integration, Logic, Obstacle Avoidance</sub>
     </td>
     <td align="center" width="33%">
       <img src="Resultado/1000102223.jpg" width="100%" style="border-radius: 8px;"><br>
