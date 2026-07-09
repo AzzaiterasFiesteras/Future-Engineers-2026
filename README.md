@@ -119,11 +119,11 @@ To properly carry out this project, this robot has been previously designed acco
 1. `3D printed chassis and pins`: allows the placement of all the components with the enough space for the front steering gear not to interference with the rest of the components.
 2. `Arduino Uno board`: controls all the robot´s components, such as the motors, the servomotor or the sensors. These are connected to the Arduino board
 3. `MG996R servo motor`:  main responsible for the front steering gear. This is controlled by a servos library in the Arduino Ide program.
-4.` TT model motor with 1:40 speed reduction`: provide robot movement. These are connected to the L298N motor driver shield for control.
+4. `TT model motor with 1:40 speed reduction`: provide robot movement. These are connected to the L298N motor driver shield for control.
 5. `Wheels with a diameter of [cm]`: connected to the rear motors for their control.
 6. `Three HC-SR04 ultrasonic sensors for measuring distances`: must measure and calculate the distance between the walls and the obstacles.
 7. `Electronic wiring: breadboard, male-to-male jumper wires, female-to-male jumper wires, and L298N shield for motor control`: wires, protoboard and motor driver shield. Allows the comunication between the Arduino board and the rest of the components.
-8.` Power supply`: two 3.7V 9900mAh 18650 batteries connected in series within their battery holder that provide enough energy for the correct running of the robot.
+ 8.   `Power supply`: two 3.7V 9900mAh 18650 batteries connected in series within their battery holder that provide enough energy for the correct running of the robot.
 10.` BNO055 gyroscope`: allows the robot to make turns much more precisely by setting itself to specific degrees at the program.
 11. `Front wheel mechanism`: made by 3D printed pieces that hold the mechanism for the robot to make turns correctly.
 > [!WARNING]
