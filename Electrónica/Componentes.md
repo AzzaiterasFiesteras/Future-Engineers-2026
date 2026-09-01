@@ -106,7 +106,7 @@ Las baterías 18650 que son de ion de litio son ampliamente usadas en robótica 
 ## Cámara
 
 
-| <img src="fotos_electronica/fotobateria.png"> | **Specifications** |
+| <img src="fotos_electronica/camarafoto.jpg"> | **Specifications** |
 |------------------------------|------------------------------|
 | **Model:** Pixy2 CMUcam5| **Nominal Voltage:** 5V DC (regulated) or 6–10V DC (unregulated, via Vin pin) |
 |**Logic Voltage:** 3.3V (digital/I2C lines) |  **Current Consumption:** ~140 mA at 5V|
