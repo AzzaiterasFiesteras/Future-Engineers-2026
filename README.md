@@ -189,6 +189,9 @@ We took the Arduino Uno board as we were already familiar with it.
 ### Bateries
 We used the 18650 batteries for our robot. Their maximum voltage is 4.2V, and the battery capacity is 9900mAh. These batteries are also rechargeable. We chose these over others due to the large number of components we had to power.
 
+### Camera
+In order to prevent the robot from crashing against obstacles, we used a PixyCam 2 Camera. This enables WALL-E to detect the color of the obstacle and decide which direction to turn (left if it is green or right if it is red).
+
 > [!WARNING]
 > Click the link below 👇 to see more information.
 > 
