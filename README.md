@@ -167,8 +167,8 @@ One of the the major problems was being able to prove the necessary energy to al
 | 1        |Motor| ![Motor](Electrónica/fotos_electronica/motorfoto.jpg)              |
 | 3       | Ultrasonic sensors| ![Ultrasonic sensor](Electrónica/fotos_electronica/ultrafoto.jpg) |
 | 1       | Camera PixyMon 2       | ![ Camera PixyMon 2  ](Electrónica/fotos_electronica/camarafoto.jpg)           |
-| 3        | Logo® Technic™ Ultrasonic Sensor   | ![Logo® Technic™ Ultrasonic Sensor](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/e8e2d6ac-bb61-4a2b-bb90-486233006838)      |
-| 280      | Logo® Technic™ spare pieces        | ![efw](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/5115e60b-d975-47cc-acee-51f2e9d34bb0)                                   |
+| 2      | Batteries   | ![Batteries](Electrónica/fotos_electronica/fotobateria.png)      |
+
 
 
 ### Servo Motor
