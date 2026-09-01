@@ -163,10 +163,10 @@ One of the the major problems was being able to prove the necessary energy to al
 | ---------| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1        | Servomotor             | ![Servomotor MG996R](Electrónica/fotos_electronica/MG996R.jpg)                         |
 | 1        | Board        | ![ Arduino Uno R3 Board](Electrónica/fotos_electronica/placafoto.jpg)              |
-| 1        | 5v power bank                      | ![5v power bank](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/4259c9a3-a346-4806-9d60-ad36e5115942)                         |
-| 2        | Logo® Robot inventor hub           | ![Logo® Robot inventor hub](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/21c04300-7178-4238-b390-21bdbd0f5f05)              |
-| 5        | Logo® Technic™ Medium Angular Motor| ![Logo® Technic™ Medium Angular Motor_2](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/33029bab-2e1a-4e48-8a18-d5d74be013a8) |
-| 2        | Logo® Technic™ Color Sensor        | ![Logo® Technic™ Color Sensor](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/3e84f65e-d1ff-419e-8f44-291a97303c2c)           |
+| 1        |Shield                    | ![Shield](Electrónica/fotos_electronica/escudofoto.png)                         |
+| 1        |Motor| ![Motor](Electrónica/fotos_electronica/motorfoto.jpg)              |
+| 3       | Ultrasonic sensors| ![Ultrasonic sensor](Electrónica/fotos_electronica/ultrafoto.jpg) |
+| 1       | Camera PixyMon 2       | ![ Camera PixyMon 2  ](Electrónica/fotos_electronica/camarafoto.jpg)           |
 | 3        | Logo® Technic™ Ultrasonic Sensor   | ![Logo® Technic™ Ultrasonic Sensor](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/e8e2d6ac-bb61-4a2b-bb90-486233006838)      |
 | 280      | Logo® Technic™ spare pieces        | ![efw](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/5115e60b-d975-47cc-acee-51f2e9d34bb0)                                   |
 
