@@ -103,4 +103,15 @@ Las baterías 18650 que son de ion de litio son ampliamente usadas en robótica 
 <img src="fotos_electronica/IMG_2476.jpeg" width="700" height="700" />
 </p>
 
+## Cámara
+
+
+| <img src="fotos_electronica/fotobateria.png"> | **Specifications** |
+|------------------------------|------------------------------|
+| **Model:** Pixy2 CMUcam5| **Nominal Voltage:** 5V DC (regulated) or 6–10V DC (unregulated, via Vin pin) |
+|**Logic Voltage:** 3.3V (digital/I2C lines) |  **Current Consumption:** ~140 mA at 5V|
+|**Image Sensor:** Aptina MT9M114, 1296×976 resolution with integrated image flow processor |**Field of View:** 60° horizontal, 40° vertical|
+|**Frame Rate:** 60 fps (16.7 ms per frame) | **Processor:** NXP LPC4330, dual-core, 204 MHz|
+|**Control Interface:** UART serial, SPI, I2C, USB, digital, analog|**Built-in Features:** Color-based object learning/detection, line and intersection tracking, barcode-style "road sign" detection, onboard memory for up to 7 saved objects, integrated LED light source (~20 lumens)|
+| 🔗 **[Buy Here](https://www.lcsc.com/product-image/C112633.html)** |**Function:** Smart vision sensor that processes images onboard to recognize and track objects by color, lines, and signs — freeing the main microcontroller (Arduino/Raspberry Pi) from that processing load. |
 
