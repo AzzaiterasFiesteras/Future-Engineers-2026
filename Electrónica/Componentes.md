@@ -42,7 +42,7 @@ El escudo que hemos utilizado ha sido el modelo L298N, y lo usamos principalment
 ## Sensores de ultrasonidos 
 Para la correcta programación de nuestro robot necesitábamos disponer de tres sensores ultrasónicos de distancia para conseguir que el robot no impactara ni tocara ninguna pared. Para la implementación de estos en el chasis utilizamos una estructura diseñada previamente en la interfaz de TinkerCad y la imprimimos en 3D. Esto nos permitió sujetar bien los tres sensores de ultrasonidos. De tal modo que nos aseguramos que los sensores se mantienen en su sitio sin caerse mientras hacíamos pruebas.
 
-| <img src="fotos_electronica/escudofoto.jpg"> | **Specifications** |
+| <img src="fotos_electronica/ultrafoto.jpg"> | **Specifications** |
 |------------------------------|------------------------------|
 | **Model:** HC-SRO4 | **Operating Voltage:** 5V DC |
 | **Logic Voltage:** 5V TTL compatible | **PWM Frequency:** 40 kHz |
