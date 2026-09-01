@@ -89,7 +89,7 @@ Para conseguir que el robot se pueda mover, hemos utilizado solo un motor que va
 ## Baterías
 Las baterías 18650 que son de ion de litio son ampliamente usadas en robótica y electrónica, y es por esto que son las que hemos usado. Su voltaje máximo son 4.2 V cargadas completamente. Y la capacidad de la batería en este caso, 9900 mAh (aunque muchas veces las baterías baratas "de 9900 mAh" no entregan realmente esa capacidad; suelen estar sobreestimadas). Con las dos baterías apiladas en serie tendríamos para 4 cargas enteras de un móvil, por ejemplo. Además, un beneficio de estas baterías es que son recargables. 
 
-| <img src="fotos_electronica/escudofoto.jpg"> | **Specifications** |
+| <img src="fotos_electronica/fotobateria.png"> | **Specifications** |
 |------------------------------|------------------------------|
 | **Model:** 18650 Li-ion Rechargeable Battery| **Nominal Voltage:** 3.7V |
 |**Maximum Voltage:** 4.2V (fully charged) | **Minimum Discharge Voltage:** 2.5–3.0V |
