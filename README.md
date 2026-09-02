@@ -191,6 +191,9 @@ We used the 18650 batteries for our robot. Their maximum voltage is 4.2V, and th
 ### Camera
 In order to prevent the robot from crashing against obstacles, we used a PixyCam 2 Camera. This enables WALL-E to detect the color of the obstacle and decide which direction to turn (left if it is green or right if it is red).
 
+### Gyroscope 
+This component is mainly used to mesure the orientation and rotation of an object. It detects changes in angle of our robot. Henceforth, we decided to use it for its turns and for controlling the trajectory on the straight sections. We used the BNO055 gyroscope.
+
 > [!WARNING]
 > Click the link below 👇 to see more information.
 > 
