@@ -168,7 +168,7 @@ One of the the major problems was being able to prove the necessary energy to al
 | 3       | Ultrasonic sensors| ![Ultrasonic sensor](Electrónica/fotos_electronica/ultrafoto.jpg) |
 | 1       | Camera PixyMon 2       | ![ Camera PixyMon 2  ](Electrónica/fotos_electronica/camarafoto.jpg)           |
 | 2      | Batteries   | ![Batteries](Electrónica/fotos_electronica/fotobateria.png)      |
-| 2      | Gyroscope  | ![Gyroscope](Electrónica/fotos_electronica/giroscopiofoto.png)      |
+| 1     | Gyroscope  | ![Gyroscope](Electrónica/fotos_electronica/giroscopiofoto.png)      |
 
 ### Servo Motor
 For the front steering wheel was necessary the incorporation of a servo motor. We chose one that could make turns according to the turning angles to make it easier for us to program.
