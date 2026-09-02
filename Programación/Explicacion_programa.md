@@ -39,7 +39,7 @@
 | `begin()`| BNO055 | Iniciar sensor  |
 
 
-# Explicación del programa
+# Explicación del programa - Open Challenge
 ## Variables y librerías
 ```C++
 #include <Wire.h>
@@ -276,3 +276,15 @@ void terminarCarrera() {
 }
 ```
 Esta función sirve para que, cuando el robot termina la carrera, no intente girar ni corregir la dirección, sino que se mantenga completamente recto. Para eso primero centra el servo y luego hace que avance en línea recta durante unos segundos y entonces se detiene por completo. Este subprograma está pensado para asegurar que al final el robot siga recto y que no le pille el contador de giros a mitad de uno. 
+
+# Explicación del programa - Obstacle Challenge
+## Variables y librerías
+```C++
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BNO055.h>
+#include <Servo.h>
+#include <Ultrasonic.h>
+#include <Pixy2.h>
+```
