@@ -200,6 +200,7 @@ This component is mainly used to mesure the orientation and rotation of an objec
 > [For more information click here](Electrónica/Componentes.md)
 
 ## Programme
+### Open Challenge
 ``` c++
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
@@ -351,6 +352,8 @@ else {
 }
 ```
 > However, if the robot does not detect any walls, it means that the path is clear. In this case, the motors are activated and the speed is increased. At the same time, the direction is continuously adjusted to ensure the robot moves in a straight line. If the robot deviates from the correct path, the servo automatically corrects the steering to bring it back to a straight trajectory.
+
+### Obstacle Challenge
 
 ## Code functions
 | Function                |        Type   | What does it do?                         | Use in the program                                                                                                                            |
